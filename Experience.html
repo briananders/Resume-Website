@@ -12,338 +12,340 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--[If lt IE 9]><style type="text/css">html{background: url("img/background.png");}</style><![endif]-->
 		<!--[If lt IE 8]><style type="text/css">.header > .right {display: none;}</style><![endif]-->
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 		<script src="js/HideShow.js"></script>
+		<script src="js/modernizr-1.0.min.js"></script>
 		
 		<style type="text/css">
-			.article {
-				-webkit-transition: all .25s ease-in-out;
-				-moz-transition: all .25s ease-in-out;
-				-o-transition: all .25s ease-in-out;
-				-ms-transition: all .25s ease-in-out;
-			}
-			.inside .article .header:hover {
-				cursor: pointer;
-				background: rgb(255,255,255); /* Old browsers */
-				background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 53%, rgba(206,206,206,1) 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(53%,rgba(229,229,229,1)), color-stop(100%,rgba(206,206,206,1))); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 53%,rgba(206,206,206,1) 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 53%,rgba(206,206,206,1) 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 53%,rgba(206,206,206,1) 100%); /* IE10+ */
-				background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 53%,rgba(206,206,206,1) 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=0 ); /* IE6-9 */
-
-			}
-			.article .header .right {
-				font-size: 20px;
-				float: right;
-				position: relative;
-					right: 15px;
-					top: 5px;
-			}
-			.inside .article .header .right {
-				font-size: 16px;
-				float: right;
-				position: relative;
-					right: 15px;
-					top: 3px;
-			}
-
-			#container > .article{
-				background: rgb(185,185,185); /* Old browsers */
-				background: -moz-linear-gradient(top,  rgba(221,221,221,1) 0%, rgba(185,185,185,1) 47%, rgba(147,147,147,1) 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(47%,rgba(185,185,185,1)), color-stop(100%,rgba(147,147,147,1))); /* Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(185,185,185,1) 47%,rgba(147,147,147,1) 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(185,185,185,1) 47%,rgba(147,147,147,1) 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(185,185,185,1) 47%,rgba(147,147,147,1) 100%); /* IE10+ */
-				background: linear-gradient(to bottom,  rgba(221,221,221,1) 0%,rgba(185,185,185,1) 47%,rgba(147,147,147,1) 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#939393',GradientType=0 ); /* IE6-9 */
-
-			}
-			#container > .article .header {
-				text-shadow: 0 -1px 0 #2B4600;
-				color: #ffffff;
-			}
+			
 		</style>
 		
 	</head>
 	<body>
-		<div id="top">
-			<div class="header">
-				<div id="profile"><img alt="My Head" src="img/Profile.png" /></div>
-				<h1>Brian Anders</h1>
-				<span>
-					Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-				</span>
-				<div id="icons">
-					<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
-					<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
-					<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
-					<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
-					<a id="gmail" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
-				</div>
+		<header id="top">
+			<div id="profile" class="img"></div>
+			<h1>Brian Anders</h1>
+			<span>
+				Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
+			</span>
+			<div id="icons">
+				<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
+				<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
+				<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
+				<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
+				<a id="gmail" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
 			</div>
-			<div class="nav">
+			<nav>
 				<a href="./">Home</a>
 				<a href="AboutMe.html">About Me</a>
-				<a class="selected">Experience</a>
+				<a href="Experience.html" class="selected">Experience</a>
 				<a href="Education.html">Education</a>
 				<a href="References.html">References</a>
-			</div>
-			</div>
+			</nav>
+		</header>
 			
 		<div id="container">
-			<div class="article" id="P" >
-				<div class="header">Personal Projects</div>
-				<div class="footer"></div>
-			</div>
-			<div class="inside">
-				<div class="article" id="iTunes">
-					<div class="header show_hide">iTunes Scripting<span class="right">Fall 2010 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="iTunes icon" src="img/iTunes.png" />
-						Just because something is considered done, doesn't mean it is. iTunes is this way. I have written JScript and AppleScripts to do functionality that is not available in iTunes's main interface.
-						<br/><br/>
-						I also made a <a href="../iTunes_Javascript.php" target="_blank">website</a> for many of my scripts. They are not locked down, so feel free to take them and play with them on your own.
-						<br/><br/>
-						Recently, I have started working on rebuilding my JScripts using AppleScript.
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="iPhone" >
-					<div class="header show_hide">iPhone Apps<span class="right">Fall 2011 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="iPhone 4" src="img/iPhone4.png" />
+			<article id="P" class="outside">
+				<header>Personal Projects</header>
+			
+				<div class="inside">
+					<article id="iTunes">
+						<header class="show_hide">
+							iTunes Scripting
+							<span class="right">Fall 2010 - Present</span>
+						</header>
 						
-						I am an avid apple fan. They control the user experience from end to end. They make the device, the OS, and the software you use with the product. To extend this control, they created the Apple store, and they even developed XCode, the suite for developing apps for iDevices.
-						<br/><br/>
-						I have been working on iPhone apps primarily. Objective-C is a powerful language with some great features.
-					
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Fishtank" >
-					<div class="header show_hide">Fish Tank Computer<span class="right">Spring 2010</span></div>
-					
-					<p class="hidden">
-						<!--img alt="Fish Tank Computer" src="img/Fishtank2.jpg" /-->
-						<img alt="Fish Tank Computer" src="img/Fishtank1.jpg" />
-					
-						For a class project, my Sophomore year (2009), we were given the assignment to take
-						apart a computer and make it something great. $300 in supplies later, including a 
-						fish tank and 6 gallons of mineral oil, we had built a fishtank computer.
+						<p class="hidden">
+							<img alt="iTunes icon" src="img/iTunes.png" />
+							Just because something is considered done, doesn't mean it is. iTunes is this way. I have written JScript and AppleScripts to do functionality that is not available in iTunes's main interface.
+							<br/><br/>
+							I also made a <a href="../iTunes_Javascript.php" target="_blank">website</a> for many of my scripts. They are not locked down, so feel free to take them and play with them on your own.
+							<br/><br/>
+							Recently, I have started working on rebuilding my JScripts using AppleScript.
+						</p>
+						<footer></footer>
+					</article>
+					<article id="iPhone" >
+						<header class="show_hide">
+							iPhone Apps
+							<span class="right">Fall 2011 - Present</span>
+						</header>
 						
-						<iframe src="http://www.youtube.com/embed/GNhxvhKoagg"></iframe>
+						<p class="hidden">
+							<img alt="iPhone 4" src="img/iPhone4.png" />
+							
+							I am an avid apple fan. They control the user experience from end to end. They make the device, the OS, and the software you use with the product. To extend this control, they created the Apple store, and they even developed XCode, the suite for developing apps for iDevices.
+							<br/><br/>
+							I have been working on iPhone apps primarily. Objective-C is a powerful language with some great features.
+						
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Fishtank" >
+						<header class="show_hide">
+							Fish Tank Computer
+							<span class="right">Spring 2010</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Fish Tank Computer" src="img/Fishtank1.jpg" />
+						
+							For a class project, my Sophomore year (2009), we were given the assignment to take
+							apart a computer and make it something great. $300 in supplies later, including a 
+							fish tank and 6 gallons of mineral oil, we had built a fishtank computer.
+							
+							<iframe src="http://www.youtube.com/embed/GNhxvhKoagg"></iframe>
 
-					</p>
-					<div class="footer"></div>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="MAME" >
+						<header class="show_hide">
+							Multiple Arcade Machine Emulator (MAME)
+							<span class="right">Fall 2011 - Spring 2012</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Arcade Grey" src="img/ArcadeGrey.png" />
+						
+							A friend of mine and I had the idea of building an arcade cabinet. The friend is <a href="http://www.alexcash.com">Alex Cash</a>, and during my senior year, we built an arcade cabinet from scratch. We got money to buy all the necessary pieces for construction, like plywood and screws. In my garage, we built the shell for the arcade. We then got a computer and set it up for MAME (Multiple Arcade Machine Emulator). MAME allows one to enjoy all their favorite games from their youth on a modern computer system. Do you like Mario Kart or 007 Golden Eye for the Nintendo 64? With MAME setup correctly and with the correct ROMS, you can play those games again.
+						
+						</p>
+						<footer></footer>
+					</article>
+					<footer></footer>
 				</div>
-				<div class="article" id="MAME" >
-					<div class="header show_hide">Multiple Arcade Machine Emulator (MAME)<span class="right">Fall 2011 - Spring 2012</span></div>
-					
-					<p class="hidden">
-						<img alt="Arcade Grey" src="img/ArcadeGrey.png" />
-					
-						A friend of mine and I had the idea of building an arcade cabinet. The friend is <a href="http://www.alexcash.com">Alex Cash</a>, and during my senior year, we built an arcade cabinet from scratch. We got money to buy all the necessary pieces for construction, like plywood and screws. In my garage, we built the shell for the arcade. We then got a computer and set it up for MAME (Multiple Arcade Machine Emulator). MAME allows one to enjoy all their favorite games from their youth on a modern computer system. Do you like Mario Kart or 007 Golden Eye for the Nintendo 64? With MAME setup correctly and with the correct ROMS, you can play those games again.
-					
-					</p>
-					<div class="footer"></div>
-				</div>
-			</div>
-			<div class="article" id="Graceland" >
-				<div class="header">Graceland University</div>
-				<div class="footer"></div>
-			</div>
-			<div class="inside">
-				<div class="article" id="ACM" >
-					<div class="header show_hide">Association for Computing Machinery (ACM)<span class="right">Fall 2008 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="Crane" src="img/Crane.jpg" />
-					
-						The <a href="http://www.acm.org">Association for Computing Machinery (ACM)</a> is the world’s largest educational and scientific computing society. At Graceland University, we have an ACM chapter. I have been an ACM student member since my freshmen year. My fourth year in the organization, I was elected to Vice President of ACM. <br/>
-						<br/>
-						This year, I am ACM President.<br/>
-						<br/>
-						We meet weekly to discuss current events in tech, watch presenters, and do activities. 		
-					
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Ackerley" >
-					<div class="header show_hide">Ackerley Scholarship<span class="right">Fall 2008 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="Crane" src="img/Crane.jpg" />
-					
-						At Graceland University, there is a scholarship paid for by the Ackerley Brothers. The <a target="blank" href="http://www.graceland.edu/About-GU/Offices/Ackerley-Scholars/index">Ackerley Scholarship</a> is presented to students based on scholastic achievement and leadership potential. I received my Ackerley Scholarship at the beginning of my freshmen year and it has continued throughout the duration of time at Graceland.
-					
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Programming" >
-					<div class="header show_hide">Programming Competitions<span class="right">Fall 2008 - Present</span></div>
-					
-					<p class="hidden">
-						<!--img alt="Programming Contest" src="img/ProgrammingContest.JPG" /-->
-						<img alt="Programming Contest" src="img/ProgrammingCompetition.JPG" />
-					
-						At Graceland, one of the cool computer things we do outside of class, is go to programming competitions. We go to one each semester. We usually have to program in Java or C++, but sometimes we get to program in many other languages, like Python. <br/>
-						<br/>
-						My team is consistenly one of the strongest at these competitions. In 2012, we scored in the top 15%.	
-					
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Robot" >
-					<div class="header show_hide">Robotics<span class="right">Fall 2008 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="Testing our robot" src="img/RobotWork.jpg" />
-						<!--img alt="Testing our robot" src="img/RobotWork2.jpg" /-->
-						<!--img alt="Testing our robot" src="img/SecondPlace.jpg" /-->
+				<footer></footer>
+			</article>
+			<article id="Graceland" class="outside">
+				<header>Graceland University</header>
+			
+				<div class="inside">
+					<article id="ACM" >
+						<header class="show_hide">
+							Association for Computing Machinery (ACM)
+							<span class="right">Fall 2008 - Present</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Crane" src="img/Crane.jpg" />
+						
+							The <a href="http://www.acm.org">Association for Computing Machinery (ACM)</a> is the world’s largest educational and scientific computing society. At Graceland University, we have an ACM chapter. I have been an ACM student member since my freshmen year. My fourth year in the organization, I was elected to Vice President of ACM. <br/>
+							<br/>
+							This year, I am ACM President.<br/>
+							<br/>
+							We meet weekly to discuss current events in tech, watch presenters, and do activities. 		
+						
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Ackerley" >
+						<header class="show_hide">
+							Ackerley Scholarship
+							<span class="right">Fall 2008 - Present</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Crane" src="img/Crane.jpg" />
+						
+							At Graceland University, there is a scholarship paid for by the Ackerley Brothers. The <a target="blank" href="http://www.graceland.edu/About-GU/Offices/Ackerley-Scholars/index">Ackerley Scholarship</a> is presented to students based on scholastic achievement and leadership potential. I received my Ackerley Scholarship at the beginning of my freshmen year and it has continued throughout the duration of time at Graceland.
+						
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Programming" >
+						<header class="show_hide">
+							Programming Competitions
+							<span class="right">Fall 2008 - Present</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Programming Contest" src="img/ProgrammingCompetition.JPG" />
+						
+							At Graceland, one of the cool computer things we do outside of class, is go to programming competitions. We go to one each semester. We usually have to program in Java or C++, but sometimes we get to program in many other languages, like Python. <br/>
+							<br/>
+							My team is consistenly one of the strongest at these competitions. In 2012, we scored in the top 15%.	
+						
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Robot" >
+						<header class="show_hide">
+							Robotics
+							<span class="right">Fall 2008 - Present</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Testing our robot" src="img/RobotWork.jpg" />
 
-						The Midwest Instruction and Computing Symposium is a regional conference where I am from. It is kind of a big deal to many Universities in the area. It's a conference for most of the time, but there is also a programming contest and a robotics
-						contest. My Junior year, <a href="http://www.alexcash.com" target="_blank">Alex Cash</a>, a good friend of mine, and I decided to team up
-						and build a robot for the contest. We received Second place at the 2011 contest, our first year.
-						<br/><br/>
-						<a href="docs/RoboMazeMICS_2011.pdf">2011 MICS Rules</a><br/>
-						<br/>
-						<a href="docs/Robot_grid_world_2012.pdf">2012 MICS Rules</a>
+							The Midwest Instruction and Computing Symposium is a regional conference where I am from. It is kind of a big deal to many Universities in the area. It's a conference for most of the time, but there is also a programming contest and a robotics
+							contest. My Junior year, <a href="http://www.alexcash.com" target="_blank">Alex Cash</a>, a good friend of mine, and I decided to team up
+							and build a robot for the contest. We received Second place at the 2011 contest, our first year.
+							<br/><br/>
+							<a href="docs/RoboMazeMICS_2011.pdf">2011 MICS Rules</a><br/>
+							<br/>
+							<a href="docs/Robot_grid_world_2012.pdf">2012 MICS Rules</a>
+							
+							<br/><br/>
+							
+							<iframe src="http://www.youtube.com/embed/X8ftqeZnook"></iframe>
+							
+							This is our robot from the 2011 MICS competition. Alex Cash is doing the videoing and the narration. This is the robot
+							that got us Second place at the MICS competition. 
+							
+							<br/><br/>
+							
+							Our robot was, easily, the most robust design at the competition. We had the strongest algorithm and we had
+							the sturdiest and most thoughtout chasis.
+							
+							<iframe src="http://www.youtube.com/embed/uzuumELcttI"></iframe>
+							
+							This is our robot from the 2012 MICS competition. Alex Cash is doing the videoing and the narration. 
+							
+							Alex and I built a robust robot that solved the puzzles for a second year.
+							
+							<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI"></iframe>
+							
+							The code for our solutions are on <a href="https://github.com/littleanders2/Robotics-Solutions" target="_blank">Github</a>.
+							<br/><br/>
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Android" >
+						<header class="show_hide">
+							Android Apps
+							<span class="right">Winter 2011</span>
+						</header>
 						
-						<br/><br/>
+						<p class="hidden">
+							<img alt="Droid Incredible" src="img/Droid.png" />
 						
-						<iframe src="http://www.youtube.com/embed/X8ftqeZnook"></iframe>
+							Android Programming in Eclipse is a terrible terrible experience.
 						
-						This is our robot from the 2011 MICS competition. Alex Cash is doing the videoing and the narration. This is the robot
-						that got us Second place at the MICS competition. 
-						
-						<br/><br/>
-						
-						Our robot was, easily, the most robust design at the competition. We had the strongest algorithm and we had
-						the sturdiest and most thoughtout chasis.
-						
-						<iframe src="http://www.youtube.com/embed/uzuumELcttI"></iframe>
-						
-						This is our robot from the 2012 MICS competition. Alex Cash is doing the videoing and the narration. 
-						
-						Alex and I built a robust robot that solved the puzzles for a second year.
-						
-						<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI"></iframe>
-						
-						The code for our solutions are on <a href="https://github.com/littleanders2/Robotics-Solutions" target="_blank">Github</a>.
-						<br/><br/>
-						
-					</p>
-					<div class="footer"></div>
+						</p>
+						<footer></footer>
+					</article>
+					<footer></footer>
 				</div>
-				<div class="article" id="Android" >
-					<div class="header show_hide">Android Apps<span class="right">Winter 2011</span></div>
-					
-					<p class="hidden">
-						<img alt="Droid Incredible" src="img/Droid.png" />
-					
-					
-					Android Programming in Eclipse is a terrible terrible experience.
-					
-					
-					</p>
-					<div class="footer"></div>
+				<footer></footer>
+			</article>
+			<article id="Other" class="outside">
+				<header>Work Experience</header>
+				
+				<div class="inside">
+					<article id="Principal" >
+						<header class="show_hide">
+							Principal Financial Group<br/>
+							<span class="place">Des Moines, IA</span><br/>
+							<span class="title">Corporate Services IT Java Devlopment Intern</span>
+							<span class="right">Summer 2012</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Principal Logo" src="img/Principal.jpg" />
+							
+							I interned at <a target="blank" href="http://www.principal.com/">Principal Financial Group</a>.
+							
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Smith" >
+						<header class="show_hide">
+							Smith and Associates<br/>
+							<span class="place">Houston, TX</span><br/>
+							<span class="title">Software Devlopment Intern</span>
+							<span class="right">Summer 2011</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Smith Logo" src="img/SmithLogo.png" />
+							
+							I interned at <a target="blank" href="http://www.smithweb.com">Smith and Associates</a>.
+							
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Coliseum" >
+						<header class="show_hide">
+							The Coliseum Theater<br/>
+							<span class="place">Lamoni, IA</span><br/>
+							<span class="title">Assistant Manager/Supervisor/Projectionist</span>
+							<span class="right">Fall 2008 - Present</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Film Projector" src="img/FilmProjector.png" />
+							
+							I work at the Coliseum Theater. It's awesome. I have laerned a lot. Especially the mechanics of how a projector works. 					
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="STA" >
+						<header class="show_hide">
+							Student Technology Assistance Plus (STA+)<br/>
+							<span class="place">Lamoni, IA</span><br/>
+							<span class="title">Student Representative</span>
+							<span class="right">Fall 2009 - Present</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Crane" src="img/Crane.jpg" />		
+							
+							I work as a Student Technology Assistant (STA+) representative. 
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Anders" >
+						<header class="show_hide">
+							Anders Crane Service<br/>
+							<span class="place">Lamoni, IA</span><br/>
+							<span class="title">Operator/Mechanic</span>
+							<span class="right">All My Life</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Grove TM250" src="img/TM250.png" />
+							
+							
+							My dad grew up in Cedar Rapids across the street from Coonrod Wrecker and Crane Service. After he left to teach economics, he started his own crane company as a hobby. As long as I can remember, I have been running the cranes. It has allowed me to learn all about the mechanics of things. This is one reason that I am such a thurough programmer.
+							
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="BSA" >
+						<header class="show_hide">
+							Boy Scouts of America<br/>
+							<span class="place">Troop 116</span><br/>
+							<span class="title">Eagle Scout</span>
+							<span class="right">Fall 2002 - Spring 2008</span>
+						</header>
+						
+						<p class="hidden">
+							<img alt="Crane" src="img/Crane.jpg" />
+							
+							
+							I am an Eagle Scout. I earned my Eagle rank when I was 15. December 22, 2005 I passed my board of review. I am one of the youngest, if not the youngest, Eagle Scout that my Troop has produced. Only 2% of all Boy Scouts earn the rank of Eagle Scout.
+							
+							
+						</p>
+						<footer></footer>
+					</article>
+					<footer></footer>
 				</div>
-			</div>
-			<div class="article" id="Other" >
-				<div class="header">Work Experience</div>
-				<div class="footer"></div>
-			</div>
-			<div class="inside">
-				<div class="article" id="Principal" >
-					<div class="header show_hide">Principal Financial Group<span class="right">Summer 2012</span></div>
-					
-					<p class="hidden">
-						<img alt="Principal Logo" src="img/Principal.jpg" />
-						
-						I interned at <a target="blank" href="http://www.principal.com/">Principal Financial Group</a>.
-						
-						
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Smith" >
-					<div class="header show_hide">Smith and Associates<span class="right">Summer 2011</span></div>
-					
-					<p class="hidden">
-						<img alt="Smith Logo" src="img/SmithLogo.png" />
-						
-						I interned at <a target="blank" href="http://www.smithweb.com">Smith and Associates</a>.
-						
-						
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Coliseum" >
-					<div class="header show_hide">The Coliseum Theater<span class="right">Fall 2008 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="Film Projector" src="img/FilmProjector.png" />
-						<!--img alt="Coliseum" src="img/Coliseum.jpg" /-->
-						
-						
-						I work at the Coliseum Theater. It's awesome. I have laerned a lot. Especially the mechanics of how a projector works. 
-						
-						
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="STA" >
-					<div class="header show_hide">Student Technology Assistance Plus (STA+)<span class="right">Fall 2009 - Present</span></div>
-					
-					<p class="hidden">
-						<img alt="Crane" src="img/Crane.jpg" />
-						
-						
-						I work as a Student Technology Assistant (STA+) representative. 
-						
-						
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="Anders" >
-					<div class="header show_hide">Anders Crane Service<span class="right">All My Life</span></div>
-					
-					<p class="hidden">
-						<img alt="Grove TM250" src="img/TM250.png" />
-						
-						
-						My dad grew up in Cedar Rapids across the street from Coonrod Wrecker and Crane Service. After he left to teach economics, he started his own crane company as a hobby. As long as I can remember, I have been running the cranes. It has allowed me to learn all about the mechanics of things. This is one reason that I am such a thurough programmer.
-						
-						
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="article" id="BSA" >
-					<div class="header show_hide">Boy Scouts of America<span class="right">Fall 2002 - Spring 2008</span></div>
-					
-					<p class="hidden">
-						<img alt="Crane" src="img/Crane.jpg" />
-						
-						
-						I am an Eagle Scout. I earned my Eagle rank when I was 15. December 22, 2005 I passed my board of review. I am one of the youngest, if not the youngest, Eagle Scout that my Troop has produced. Only 2% of all Boy Scouts earn the rank of Eagle Scout.
-						
-						
-					</p>
-					<div class="footer"></div>
-				</div>
-				<div class="footer"></div>
-			</div>
-			<div class="footer" id="footer">
+				<footer></footer>
+			</article>
+			<footer id="footer">
 				&#169; 2012 Brian Anders. All rights reserved. <br/>
 			All HTML, CSS and Javascript/JQuery written or modified by Brian Anders
-			</div>
+			</footer>
 			<div id="foot">
 				Validate:
 				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>

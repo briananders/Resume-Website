@@ -4,9 +4,8 @@
 	<head>
 		<meta charset="utf-8"/>   
 		<title> Brian Anders | Education </title>
-		<link rel="stylesheet" type="text/css" href="clear.css">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<script type="text/javascript">
-
 			function getcss(cssfile){
 				loadcss = document.createElement('link')
 				loadcss.setAttribute("rel", "stylesheet")
@@ -16,18 +15,11 @@
 
 				}
 
-				if(screen.width <= '999') 
-				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
-				{
-					getcss('small.css') 
-					// Defines the .css file you want to load for this range (800x600.css)
-				}
-				else 
-				{
-					getcss('style.css')
-					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
-				}
-
+			if(screen.width <= '999'){
+				getcss('css/small.css') 
+			}else {
+				getcss('css/style.css')
+			}
 		</script>
 
 	</head>
@@ -39,30 +31,27 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="../Resume2/" class="lborder first">Home</a>
+						<a href="../Resume1/">Home</a>
 					</li>
 					<li>
-						<a href="AboutMe.html" class="lborder">About Me</a>
+						<a href="AboutMe.html">About Me</a>
 					</li>
 					<li>
-						<a href="Experience.html" class="lborder">Experience</a>
+						<a href="Experience.html">Experience</a>
 					</li>
 					<li>
-						<a class="lborder selected">Education</a>
+						<a class="selected">Education</a>
 					</li>
 					<li>
-						<a href="References.html" class="rborder lborder last">References</a>
+						<a href="References.html">References</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="main">
-			
 				<article class="education">
 					<header>Graceland University</header>
+					<img alt="Graceland Administration Building" src="img/Graceland.jpg" />	
 					
-					<p>
-						<img alt="Graceland Administration Building" src="images/Graceland.jpg" />	
-					</p>
 					<ul>
 						<li>Attended: Fall 2008 - Present</li>
 						<li>Anticipated graduation date: May 2013</li>
@@ -81,9 +70,8 @@
 			<div class="main">
 				<article class="education">
 					<header>Lamoni High School</header>
-					<p>
-						<img alt="Lamoni School Sign" src="images/LamoniSchools.jpg" />
-					</p>
+					<img alt="Lamoni School Sign" src="img/LamoniSchools.jpg" />
+					
 					<ul>	
 						<li>Attended: Fall 2003 - Spring 2008</li>
 						<li>Diploma</li>

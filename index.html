@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8"/>   
 		<title> Brian Anders | Home </title>
-		<link rel="stylesheet" type="text/css" href="clear.css">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<script type="text/javascript">
 
 			function getcss(cssfile){
@@ -16,17 +16,11 @@
 
 				}
 
-				if(screen.width <= '999') 
-				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
-				{
-					getcss('small.css') 
-					// Defines the .css file you want to load for this range (800x600.css)
-				}
-				else 
-				{
-					getcss('style.css')
-					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
-				}
+			if(screen.width <= '999'){
+				getcss('css/small.css') 
+			}else {
+				getcss('css/style.css')
+			}
 
 		</script>
 
@@ -39,28 +33,28 @@
 			<nav>
 				<ul>
 					<li>
-						<a class="lborder first selected">Home</a>
+						<a class="selected">Home</a>
 					</li>
 					<li>
-						<a href="AboutMe.html" class="lborder">About Me</a>
+						<a href="AboutMe.html">About Me</a>
 					</li>
 					<li>
-						<a href="Experience.html" class="lborder">Experience</a>
+						<a href="Experience.html">Experience</a>
 					</li>
 					<li>
-						<a href="Education.html" class="lborder">Education</a>
+						<a href="Education.html">Education</a>
 					</li>
 					<li>
-						<a href="References.html" class="rborder lborder last">References</a>
+						<a href="References.html">References</a>
 					</li>
 				</ul>
 			</nav>
-			<div id="main">
+			<div class="main">
 				<article>
 					<header>Who is Brian Anders?</header>
 					<br/>
 					<p>
-						<img alt="Apple" src="images/Apple.png" />
+						<img alt="Apple" src="img/Apple.png" />
 						I am a Computer Scientist, Web Designer, Mathematician, and Musician.
 					<br/><br/>
 						I am currently a Senior at <a href="http://www.graceland.edu/" target="_blank">Graceland University</a> in <a href="http://www.lamoni-iowa.com/" target="_blank">Lamoni, Iowa</a> pursuing a degree in Computer Science/Information Technology, a degree in Mathematics, and a minor in Web Design.
@@ -71,7 +65,7 @@
 						<a href="https://twitter.com/#!/littleanders2" target="_blank">Twitter</a>, and 
 						<a href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a" target="_blank">LinkedIn</a>
 					<br/><br/>
-						My formal resum&#233;: <a href="Resume.pdf">PDF</a> <a href="Resume.docx">.docx</a>  <a href="Resume.doc">.doc</a>
+						My formal resum&#233;: <a href="docs/Resume.pdf">PDF</a> <a href="docs/Resume.docx">.docx</a>  <a href="docs/Resume.doc">.doc</a>
 					<br/><br/>
 						Brian Anders
 					</p>

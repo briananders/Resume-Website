@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>   
 		<title> Brian Anders | Experience </title>
-		<link rel="stylesheet" type="text/css" href="clear.css">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<script type="text/javascript">
 
 			function getcss(cssfile){
@@ -15,24 +15,20 @@
 			}
 
 			if(screen.width <= '999'){
-				getcss('small.css') 
+				getcss('css/small.css') 
 			}else {
-				getcss('style.css')
+				getcss('css/style.css')
 			}
-			
-			$(".test").click(function() {
-			  alert("FUCK");
-			});
 
 		</script>
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-		<script src="HideShow.js"></script>
+		<script src="js/HideShow.js"></script>
 		
 		<style type="text/css">
-		article:hover{
-			background: rgba(160, 160, 160, 0.11);
-		}
+			article:hover{
+				background: rgba(160, 160, 160, 0.3);
+			}
 		</style>
 		
 	</head>
@@ -44,41 +40,38 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="../Resume2/" class="lborder first">Home</a>
+						<a href="../Resume1/">Home</a>
 					</li>
 					<li>
-						<a href="AboutMe.html" class="lborder">About Me</a>
+						<a href="AboutMe.html">About Me</a>
 					</li>
 					<li>
-						<a class="lborder selected">Experience</a>
+						<a class="selected">Experience</a>
 					</li>
 					<li>
-						<a href="Education.html" class="lborder">Education</a>
+						<a href="Education.html">Education</a>
 					</li>
 					<li>
-						<a href="References.html" class="rborder lborder last">References</a>
+						<a href="References.html">References</a>
 					</li>
 				</ul>
 			</nav>
 			
-			<div id="main">
+			<div class="main">
 				<article id="P" class="show_hide">
-					<a href="" class="show_hide articleheader">Personal Projects<img src="images/Show.png" alt="Show/Hide"></a>
+					<a href="" class="show_hide articleheader">Personal Projects<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						
 						Since learning computer programming, I have done several personal projects outside of school work. Some, I have listed, while others, I have not.
-
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>
 				<div class="inside">
 					<article id="iTunes">
-						<a  class="show_hide articleheader">iTunes JScripts<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">iTunes JScripts<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="iTunes icon" src="images/iTunes.png" />
+							<img alt="iTunes icon" src="img/iTunes.png" />
 							As goes with my obsession of music, I have a lot of music on my computer. I bought my first iPod when I was in 7th grade. So, it stands to reason that I have had to work with iTunes all this time as well. I like iTunes a lot, but being a computer person and working with logic, I am very organized and sometimes become obsessed trying to organize my music.
 							<br/><br/>
 							Just because something is considered done, doesn't mean it is. So I researched how to write scripts to do things automatically, like fix capitalization or build and sort playlists. I use JScripts, which are very similar to javascripts. JScripts were developed by Microsoft for Internet Explorer. According to Douglas Crockford, "They are just different names for the same language," but JScript supports <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript" target="_blank">Conditional Comments</a>.
@@ -87,7 +80,7 @@
 							<br/><br/>
 							Here's an example of some script code:
 							<br/>
-							<span>
+							<span class="courier">
 								<br/>/*
 								<br/>This Program adds to the play count of the selected tracks.
 								<br/>
@@ -122,49 +115,26 @@
 						<footer></footer>
 					</article>
 					<article id="iPhone">
-						<a  class="show_hide articleheader">iPhone Apps<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">iPhone Apps<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="iPhone 4" src="images/iPhone4.png" />
+							<img alt="iPhone 4" src="img/iPhone4.png" />
 							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						<br/><br/>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
 					<article id="Fishtank">
-						<a  class="show_hide articleheader">Fish Tank Computer<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Fish Tank Computer<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Fish Tank Computer" src="images/Fishtank2.jpg" />
-							<img alt="Fish Tank Computer" src="images/Fishtank1.jpg" />
+							<img alt="Fish Tank Computer" src="img/Fishtank2.jpg" />
+							<img alt="Fish Tank Computer" src="img/Fishtank1.jpg" />
 						
 							For a class project, my Sophomore year (2009), in our computer hardware class, we were given the assignment to take
 							apart a computer and make it look totally different, yet still work. My team looked into different ways to 
@@ -200,23 +170,10 @@
 						<footer></footer>
 					</article>
 					<article id="MAME">
-						<a  class="show_hide articleheader">Multiple Arcade Machine Emulator (MAME)<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Multiple Arcade Machine Emulator (MAME)<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Arcade Grey" src="images/ArcadeGrey.png" />
-							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+							<img alt="Arcade Grey" src="img/ArcadeGrey.png" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -224,38 +181,15 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
 				</div>
 				<article id="Graceland">
-					<a  class="show_hide articleheader">Graceland University<img src="images/Show.png" alt="Show/Hide"></a>
+					<a  class="show_hide articleheader">Graceland University<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						<img alt="CSLab" src="images/PracticeProgrammingCompetition.JPG" />
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<img alt="CSLab" src="img/PracticeProgrammingCompetition.JPG" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -263,39 +197,15 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>
 				<div class="inside">
 					<article id="ACM">
-						<a  class="show_hide articleheader">Association for Computing Machinery (ACM)<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Association for Computing Machinery (ACM)<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Crane" src="images/Crane.jpg" />
-							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+							<img alt="Crane" src="img/Crane.jpg" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -303,37 +213,14 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
 					<article id="Ackerley">
-						<a  class="show_hide articleheader">Ackerley Scholarship<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Ackerley Scholarship<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Crane" src="images/Crane.jpg" />
-							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+							<img alt="Crane" src="img/Crane.jpg" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -341,38 +228,15 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
 					<article id="Programming">
-						<a  class="show_hide articleheader">Programming Competitions<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Programming Competitions<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Programming Contest" src="images/ProgrammingContest.JPG" />
-							<img alt="Programming Contest" src="images/ProgrammingCompetition.JPG" />
-							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+							<img alt="Programming Contest" src="img/ProgrammingContest.JPG" />
+							<img alt="Programming Contest" src="img/ProgrammingCompetition.JPG" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -380,26 +244,16 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
 					<article id="Robot">
-						<a  class="show_hide articleheader">Robotics<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Robotics<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Testing our robot" src="images/RobotWork.jpg" />
-							<img alt="Testing our robot" src="images/RobotWork2.jpg" />
-							<img alt="Testing our robot" src="images/SecondPlace.jpg" />
+							<img alt="Testing our robot" src="img/RobotWork.jpg" />
+							<img alt="Testing our robot" src="img/RobotWork2.jpg" />
+							<img alt="Testing our robot" src="img/SecondPlace.jpg" />
 
 							
 							The Midwest Instruction and Computing Symposium is a regional conference where I am from. It is kind of a big deal to many
@@ -467,30 +321,17 @@
 							
 							Video of our failure at the MICS competition below.
 							<!--iframe src="http://www.youtube.com/embed/3ZoqgPOKeTA"></iframe-->
-							<video src="videos/MicsFail.mp4" controls preload=auto poster="images/RobotWork.jpg"></video>
+							<video src="videos/MicsFail.mp4" controls preload=auto poster="img/RobotWork.jpg"></video>
 							Needless to say, we learned our lesson.
 							
 						</p>
 						<footer></footer>
 					</article>
 					<article id="Android">
-						<a  class="show_hide articleheader">Android Apps<img src="images/Show.png" alt="Show/Hide"></a>
+						<a  class="show_hide articleheader">Android Apps<img src="img/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Droid Incredible" src="images/Droid.jpg" />
-							
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+							<img alt="Droid Incredible" src="img/Droid.jpg" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -498,39 +339,16 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
 				</div>
 				<article id="Smith">
-					<a  class="show_hide articleheader pad">Smith and Associates<img src="images/Show.png" alt="Show/Hide"></a>
+					<a  class="show_hide articleheader pad">Smith and Associates<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						<img alt="Smith Logo" src="images/SmithLogo.jpg" />
-						<img alt="Smith" src="images/Smith.jpg" />
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<img alt="Smith Logo" src="img/SmithLogo.jpg" />
+						<img alt="Smith" src="img/Smith.jpg" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -538,39 +356,16 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>
 				<article id="Coliseum">
-					<a  class="show_hide articleheader pad">The Coliseum Theater<img src="images/Show.png" alt="Show/Hide"></a>
+					<a  class="show_hide articleheader pad">The Coliseum Theater<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						<img alt="Platters" src="images/Platters.png" />
-						<img alt="Film Projector" src="images/FilmProjector.png" />
-						<!--img alt="Coliseum" src="images/Coliseum.jpg" /-->
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<img alt="Platters" src="img/Platters.png" />
+						<img alt="Film Projector" src="img/FilmProjector.png" />
+						<!--img alt="Coliseum" src="img/Coliseum.jpg" /-->
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -578,37 +373,14 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>
 				<article id="STA">
-					<a  class="show_hide articleheader pad">Student Technology Assistance Plus (STA+)<img src="images/Show.png" alt="Show/Hide"></a>
+					<a  class="show_hide articleheader pad">Student Technology Assistance Plus (STA+)<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						<img alt="Crane" src="images/Crane.jpg" />
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<img alt="Crane" src="img/Crane.jpg" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -616,37 +388,14 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>
 				<article id="Anders">
-					<a  class="show_hide articleheader pad">Anders Crane Service<img src="images/Show.png" alt="Show/Hide"></a>
+					<a  class="show_hide articleheader pad">Anders Crane Service<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						<img alt="Grove TM250" src="images/TM250.png" />
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<img alt="Grove TM250" src="img/TM250.png" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -654,37 +403,14 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>
 				<article id="BSA">
-					<a  class="show_hide articleheader pad">Boy Scouts of America<img src="images/Show.png" alt="Show/Hide"></a>
+					<a  class="show_hide articleheader pad">Boy Scouts of America<img src="img/Show.png" alt="Show/Hide"></a>
 					
 					<p class="hidden">
-						<img alt="Crane" src="images/Crane.jpg" />
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<img alt="Crane" src="img/Crane.jpg" />
 						
 						
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
@@ -692,15 +418,6 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
 						
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						<br/><br/>
 					</p>
 					<footer></footer>
 				</article>

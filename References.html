@@ -4,9 +4,8 @@
 	<head>
 		<meta charset="utf-8"/>   
 		<title> Brian Anders | References </title>
-		<link rel="stylesheet" type="text/css" href="clear.css">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<script type="text/javascript">
-
 			function getcss(cssfile){
 				loadcss = document.createElement('link')
 				loadcss.setAttribute("rel", "stylesheet")
@@ -16,18 +15,11 @@
 
 				}
 
-				if(screen.width <= '999') 
-				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
-				{
-					getcss('small.css') 
-					// Defines the .css file you want to load for this range (800x600.css)
-				}
-				else 
-				{
-					getcss('style.css')
-					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
-				}
-
+			if(screen.width <= '999'){
+				getcss('css/small.css') 
+			}else {
+				getcss('css/style.css')
+			}
 		</script>
 
 	</head>
@@ -39,45 +31,45 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="../Resume2/" class="lborder first">Home</a>
+						<a href="../Resume1/">Home</a>
 					</li>
 					<li>
-						<a href="AboutMe.html" class="lborder">About Me</a>
+						<a href="AboutMe.html">About Me</a>
 					</li>
 					<li>
-						<a href="Experience.html" class="lborder">Experience</a>
+						<a href="Experience.html">Experience</a>
 					</li>
 					<li>
-						<a href="Education.html" class="lborder">Education</a>
+						<a href="Education.html">Education</a>
 					</li>
 					<li>
-						<a class="rborder lborder last selected">References</a>
+						<a class="selected">References</a>
 					</li>
 				</ul>
 			</nav>
 			
 			<div class="main ref">
-				<img class="Prof" id="Brunner" src="images/KevinBrunner.png" alt="Kevin Brunner" />
+				<img class="Prof" id="Brunner" src="img/KevinBrunner.png" alt="Kevin Brunner" />
 				<div class="spacer"></div>
 				<span>
-					<strong>Kevin D. Brunner</strong>, Ph.D.,<br/>
+					<strong>Kevin Brunner</strong>, Ph.D.,<br/>
 					Associate Professor of Information Technology<br/>
 					Ph: 641.784.5175<br/>
 					<a href="mailto:brunner@graceland.edu">brunner@graceland.edu</a>
 				</span>
 			</div>
 			<div class="main ref">
-				<img class="Prof" id="JJones" src="images/JimJones.png" alt="Jim Jones" />
+				<img class="Prof" id="JJones" src="img/JimJones.png" alt="Jim Jones" />
 				<div class="spacer"></div>
 				<span>
-					<strong>James S. Jones</strong>, Ph.D.,<br/>
+					<strong>James Jones</strong>, Ph.D.,<br/>
 					Professor of Computer Science<br/>
 					Ph: 641.784.5294<br/>
 					<a href="mailto:jsjones@graceland.edu">jsjones@graceland.edu</a>
 				</span>
 			</div>
 			<div class="main ref">
-				<img class="Prof" id="Ellis" src="images/RonEllis.png" alt="Ron Ellis" />
+				<img class="Prof" id="Ellis" src="img/RonEllis.png" alt="Ron Ellis" />
 				<div class="spacer"></div>
 				<span>
 					<strong>Ron Ellis</strong>, Ph.D.,<br/>
@@ -87,7 +79,7 @@
 				</span>
 			</div>
 			<div class="main ref">
-				<img class="Prof" id="Cash" src="images/AlexCash.png" alt="Alex Cash" />
+				<img class="Prof" id="Cash" src="img/AlexCash.png" alt="Alex Cash" />
 				<div class="spacer"></div>
 				<span>
 					<strong>Alex Cash</strong>,<br/>
@@ -97,7 +89,7 @@
 				</span>
 			</div>
 			<div class="main ref" style="margin-right:0px;">
-				<img class="Prof" id="Hamilton" src="images/BrittanyHamilton.png" alt="Brittany Hamilton" />
+				<img class="Prof" id="Hamilton" src="img/BrittanyHamilton.png" alt="Brittany Hamilton" />
 				<div class="spacer"></div>
 				<span>
 					<strong>Brittany Hamilton</strong>,<br/>

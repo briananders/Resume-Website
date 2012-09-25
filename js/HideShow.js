@@ -23,7 +23,7 @@
              var toggleClick = $(this);
              // this reads the rel attribute of the button to determine which div id to toggle
              //var toggleDiv = $(this).attr('rel');
-			 var toggleDiv = $(this).siblings('p');
+			 var toggleDiv = $(this).children('p');
              // here we toggle show/hide the correct div at the right speed and using which easing effect
              $(toggleDiv).slideToggle(options.speed, options.easing, function() {
              // this only fires once the animation is completed

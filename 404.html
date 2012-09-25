@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta name=description content="Brian Anders's Resume Website"> 
 		<meta name=author content="Brian Anders"> 
-		<meta name=viewport content="width=920, initial-scale=1">
+		<meta name=viewport content="width=400, initial-scale=1">
 		<title>Page Not Found :(</title>
 
 		<style>
@@ -29,8 +29,8 @@
 			}
 			html, input { 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 			}
-			body { 	max-width: 1100px; 
-					width: 1100px; 
+			body { 	max-width: 500px; 
+					width: 500px; 
 					padding: 30px 20px 50px; 
 					border: 1px solid #b3b3b3; 
 					border-radius: 4px; 
@@ -64,115 +64,41 @@
 			input::-moz-focus-inner { 	padding: 0; 
 										border: 0; 
 			}
-
-			.main { max-width: 956px; 
-					width: 956px; 
-					margin: 0 auto; 
-			}
-				
+			
 			nav {
+				width: 490px;
+				height: 40px;
+			}
+			nav a{
+				color: #737373;
 				font-size: 16px;
-				width: 956px;
-				height: 48px;
-				margin-bottom: 10px;
-				border-radius: 10px;
-				padding: 0;
-				margin: 20px 0;
-			}
-			nav ul{
-				list-style: none;
-				width: 956px;
-				height: 48px;
-				padding: 0;
-				margin: 0;
-			}
-			nav ul li:first-child a{
-				border-left: 1px solid #aaaaaa;
-				border-top:  1px solid #aaaaaa;
-				border-bottom: 1px solid #aaaaaa;
-				border-radius: 10px 0 0 10px;
-			}
-			nav ul li:last-child a{	
-				border-right: 1px solid #aaaaaa;
-				border-top:  1px solid #aaaaaa;
-				border-bottom: 1px solid #aaaaaa;
-				border-radius: 0 10px 10px 0;
-			}
-			nav li{
-				height: 48px;
-				float: left;
-			}
-			nav li a {
-				padding: 12px 0;
+				padding: 9px 0px;
 				text-decoration: none;
+				width: 97px;
 				text-align: center;
-				display: inline;
+				overflow: hidden;
+				display: block;
 				float: left;
-				width: 190px;
-				font-weight: 700;
-				text-shadow: 0 1px 0 #bbbbbb;
-				color: #222222;
-					
-				background: white;
-				
-				border-top: 1px solid #aaaaaa;
-				border-bottom: 1px solid #aaaaaa;
-				border-left: 1px solid #aaaaaa;
-								
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
+				font-size: 16px;
 			}
 			nav a:hover {
-				-moz-box-shadow:    inset 0 0 3px #444;
-				-webkit-box-shadow: inset 0 0 3px #444;
-				box-shadow:         inset 0 0 3px #444;
+				text-decoration: underline;
+				color: #800080;
 			}
+			
+			
 
 		</style>
-		<script type="text/javascript">
-			function getcss(cssfile){
-				loadcss = document.createElement('link')
-				loadcss.setAttribute("rel", "stylesheet")
-				loadcss.setAttribute("type", "text/css")
-				loadcss.setAttribute("href", cssfile)
-				document.getElementsByTagName("head")[0].appendChild(loadcss)
-
-				}
-
-			if(screen.width <= '999'){
-				getcss('css/small.css') 
-			}else {
-				getcss('css/small.css')
-			}
-		</script>
 		<script src="js/libs/modernizr-2.5.3.min.js"></script>
 	</head>
 	<body>
-		<div class="main">
-			<nav>
-				<ul>
-					<li>
-						<a href="./">Home</a>
-					</li>
-					<li>
-						<a href="AboutMe.html">About Me</a>
-					</li>
-					<li>
-						<a href="Experience.html">Experience</a>
-					</li>
-					<li>
-						<a href="Education.html">Education</a>
-					</li>
-					<li>
-						<a href="References.html">References</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<nav>
+			<a href="./">Home</a>
+			<a href="AboutMe.html">About Me</a>
+			<a href="Experience.html">Experience</a>
+			<a href="Education.html">Education</a>
+			<a href="References.html">References</a>
+		</nav>
 		<div class="container">
 			<h1>Not found <span>:(</span></h1>
 			<p>Sorry, but the page you were trying to view does not exist.</p>

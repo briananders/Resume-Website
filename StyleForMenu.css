@@ -1,0 +1,153 @@
+
+#navigate {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	height: 39px;
+	
+	background: #adadad; /* Old browsers */
+	background: -moz-linear-gradient(top,  #adadad 1%, #6d6d6d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#adadad), color-stop(100%,#6d6d6d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* IE10+ */
+	background: linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* W3C */
+
+	box-shadow: 1px 0 5px grey;
+}
+
+#ToTop {
+	background-color: rgba(255,0,0,.3);
+}
+
+#menu, #menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+}
+#menu {
+        width: 890px;
+		margin: 0 auto;
+}
+#menu:before,
+#menu:after {
+        content: "";
+        display: table;
+}
+#menu:after {
+        clear: both;
+}
+
+#menu li {
+        float: left;
+        position: relative;
+}
+#menu a {
+        float: left;
+        padding: 12px 30px;
+        text-transform: uppercase;
+        font: bold 12px Arial, Helvetica;
+        text-decoration: none;
+		text-shadow: 0 1px 0 #bbbbbb;
+		color: black;
+}
+#menu li:hover > a {
+        color: #fafafa;
+		text-shadow: 0 1px 0 #000;
+}
+
+*html #menu li a:hover { /* IE6 only */
+    color: #fafafa;
+}
+
+#menu ul {
+	margin: 20px 0 0 0;
+	_margin: 0; /*IE6 only*/
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	bottom: 39px;
+	left: 0;
+	z-index: 9999;
+	
+	background: #adadad; /* Old browsers */
+	background: -moz-linear-gradient(top,  #adadad 1%, #6d6d6d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#adadad), color-stop(100%,#6d6d6d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* IE10+ */
+	background: linear-gradient(top,  #adadad 1%,#6d6d6d 100%); /* W3C */
+
+	-moz-box-shadow: 0 -1px rgba(255,255,255,.3);
+	-webkit-box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+	box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0 0;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+#menu li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+}
+#menu ul ul {
+        top: 0;
+        left: 150px;
+        margin: 0 0 0 20px;
+        _margin: 0; /*IE6 only*/
+        -moz-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+        -webkit-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+        box-shadow: -1px 0 0 rgba(255,255,255,.3);
+}
+#menu ul li {
+        float: none;
+        display: block;
+        border: 0;
+        _line-height: 0; /*IE6 only*/
+        -moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+        -webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+        box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+}
+#menu ul li:last-child {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+}
+#menu ul a {
+        padding: 10px;
+        width: 115px;
+        _height: 10px; /*IE6 only*/
+        display: block;
+        white-space: nowrap;
+        float: none;
+        text-transform: none;
+}
+#menu ul a:hover {
+        background-color: #0186ba;
+        background-image: -moz-linear-gradient(#04acec,  #0186ba);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+        background-image: -webkit-linear-gradient(#04acec, #0186ba);
+        background-image: -o-linear-gradient(#04acec, #0186ba);
+        background-image: -ms-linear-gradient(#04acec, #0186ba);
+        background-image: linear-gradient(#04acec, #0186ba);
+}
+#menu ul li:first-child > a {
+        -moz-border-radius: 3px 3px 0 0;
+        -webkit-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+}
+
+
+
+
+
+
+
+
+
+

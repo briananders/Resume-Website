@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>   
+		<title> Brian Anders | Experience </title>
+		<link rel="stylesheet" type="text/css" href="clear.css">
+		<script type="text/javascript">
+
+			function getcss(cssfile){
+				loadcss = document.createElement('link')
+				loadcss.setAttribute("rel", "stylesheet")
+				loadcss.setAttribute("type", "text/css")
+				loadcss.setAttribute("href", cssfile)
+				document.getElementsByTagName("head")[0].appendChild(loadcss)
+			}
+
+			if(screen.width <= '999'){
+				getcss('small.css') 
+			}else {
+				getcss('style.css')
+			}
+			
+			$(".test").click(function() {
+			  alert("FUCK");
+			});
+
+		</script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script src="HideShow.js"></script>
+		
+		<style type="text/css">
+		article:hover{
+			background: rgba(160, 160, 160, 0.11);
+		}
+		</style>
+		
+	</head>
+	<body id="Top">
+		<div id="container">
+			<header>
+				<div><h2>Brian Anders | </h2><h3>Experience</h3></div>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="../Resume2/" class="lborder first">Home</a>
+					</li>
+					<li>
+						<a href="AboutMe.html" class="lborder">About Me</a>
+					</li>
+					<li>
+						<a class="lborder selected">Experience</a>
+					</li>
+					<li>
+						<a href="Education.html" class="lborder">Education</a>
+					</li>
+					<li>
+						<a href="References.html" class="rborder lborder last">References</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="main">
+				<article id="P" class="show_hide">
+					<a href="" class="show_hide articleheader">Personal Projects<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						
+						Since learning computer programming, I have done several personal projects outside of school work. Some, I have listed, while others, I have not.
+
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<div class="inside">
+					<article id="iTunes">
+						<a  class="show_hide articleheader">iTunes JScripts<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="iTunes icon" src="images/iTunes.png" />
+							As goes with my obsession of music, I have a lot of music on my computer. I bought my first iPod when I was in 7th grade. So, it stands to reason that I have had to work with iTunes all this time as well. I like iTunes a lot, but being a computer person and working with logic, I am very organized and sometimes become obsessed trying to organize my music.
+							<br/><br/>
+							Just because something is considered done, doesn't mean it is. So I researched how to write scripts to do things automatically, like fix capitalization or build and sort playlists. I use JScripts, which are very similar to javascripts. JScripts were developed by Microsoft for Internet Explorer. According to Douglas Crockford, "They are just different names for the same language," but JScript supports <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript" target="_blank">Conditional Comments</a>.
+							<br/><br/>
+							I also made a <a href="../iTunes_Javascript.php" target="_blank">website</a> for many of my scripts using php to automatically list all the files and their desciptions.
+							<br/><br/>
+							Here's an example of some script code:
+							<br/>
+							<span>
+								<br/>/*
+								<br/>This Program adds to the play count of the selected tracks.
+								<br/>
+								<br/>By: Brian Anders
+								<br/>*/
+								<br/>
+								<br/>var Amount = 1;
+								<br/>
+								<br/>var iTunesApp = WScript.CreateObject("iTunes.Application");
+								<br/>var Tracks = iTunesApp.SelectedTracks;
+								<br/>var numtracks = Tracks.Count;
+								<br/>
+								<br/>
+								<br/>while(numtracks > 0)
+								<br/>{
+								<br/>	var currTrack = Tracks.Item(numtracks);
+								<br/>	var Artist = currTrack.Artist;
+								<br/>	var Name = currTrack.Name;
+								<br/>	var Album = currTrack.Album;
+								<br/>	var Track = currTrack.TrackNumber;
+								<br/>	var count = currTrack.PlayedCount;
+								<br/>
+								<br/>	currTrack.PlayedCount += Amount;
+								<br/>
+								<br/>	numtracks--;
+								<br/> 
+								<br/>}
+								<br/>
+								<br/>WScript.Echo("Done!");
+							</span>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="iPhone">
+						<a  class="show_hide articleheader">iPhone Apps<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="iPhone 4" src="images/iPhone4.png" />
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Fishtank">
+						<a  class="show_hide articleheader">Fish Tank Computer<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Fish Tank Computer" src="images/Fishtank2.jpg" />
+							<img alt="Fish Tank Computer" src="images/Fishtank1.jpg" />
+						
+							For a class project, my Sophomore year (2009), in our computer hardware class, we were given the assignment to take
+							apart a computer and make it look totally different, yet still work. My team looked into different ways to 
+							have a computer cool itself differently. Why use a loud fan? One of us ran across a fish tank computer and
+							showed the rest of the group. We were immediately saying "We can do this." So we researched how to do it,
+							the pros and cons of the idea, and the price to do it. Overall we spent around $300 in supplies, including a 
+							fish tank and 6 gallons of Mineral Oil. 
+							<br/><br/>
+							An interesting property of Mineral Oil, is that it is a nonconductive,
+							clear, liquid. This means that we can submerge our electrical gadgets, like a computer's motherboard and power
+							supply, into mineral oil and it will not short out or electricute anyone. It also acts as a decent coolant.
+							<br/><br/>
+							We set our motherboard and power supply into the fish tank and filled it with mineral oil (video below). The fans stopped spinning in the video card and power supply. We ran a program called Prime95, which tries to find all the prime numbers. The real purpose of Prime95 is to peg your processor at 100% for as long as it runs. We then put a thermometer into the oil to track the temperature change. We also got software to show the temperature on the screen. After a few hours the fans started spinning again, probably because the oil is great lubricant.
+							
+							<iframe src="http://www.youtube.com/embed/GNhxvhKoagg"></iframe>
+
+							Things we learned: mineral oil would be a much better coolant if we hooked it up to a liquid cooler, like a radiator in a car, 
+							otherwise, over long periods of time, it will heat up. Naturally, the more you use your computer, and the more 
+							processing you do, the warmer the oil gets.
+							<br/><br/>
+							Some bad things about mineral oil that we learned. Oil wicks up. This means, that unlike water, oil will oppose 
+							the force of gravity. If you dipped the tip of a hanging rope into a puddle of mineral oil, it will slowly absorb into
+							the rope and make its way up to the top. This also means that if you leave your mouse, keyboard, and monitor hooked up to the 
+							fish tank computer, you will find oil coming out of your mouse, keyboard, and monitor a few weeks later. When we did it, there 
+							was no damage, so it was pretty funny. We also found that the oil traveled inside the cords and would come out of the wall socket.
+							<br/><br/>
+							Do we still have this sweet machine? No. Our professor thought that it was a really cool bit of work and liked to show it off.
+							And being a busy and forgetful person, he left it on for about a week. The outcome was a fish tank that cracked and oozed hot mineral
+							oil all over our floor, which had to be replaced. So, moral of the project: it's a cool project, but not a realistic way to cool
+							your system for a long period of time.
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="MAME">
+						<a  class="show_hide articleheader">Multiple Arcade Machine Emulator (MAME)<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Arcade Grey" src="images/ArcadeGrey.png" />
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+				</div>
+				<article id="Graceland">
+					<a  class="show_hide articleheader">Graceland University<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="CSLab" src="images/PracticeProgrammingCompetition.JPG" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<div class="inside">
+					<article id="ACM">
+						<a  class="show_hide articleheader">Association for Computing Machinery (ACM)<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Crane" src="images/Crane.jpg" />
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Ackerley">
+						<a  class="show_hide articleheader">Ackerley Scholarship<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Crane" src="images/Crane.jpg" />
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Programming">
+						<a  class="show_hide articleheader">Programming Competitions<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Programming Contest" src="images/ProgrammingContest.JPG" />
+							<img alt="Programming Contest" src="images/ProgrammingCompetition.JPG" />
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Robot">
+						<a  class="show_hide articleheader">Robotics<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Testing our robot" src="images/RobotWork.jpg" />
+							<img alt="Testing our robot" src="images/RobotWork2.jpg" />
+							<img alt="Testing our robot" src="images/SecondPlace.jpg" />
+
+							
+							The Midwest Instruction and Computing Symposium is a regional conference where I am from. It is kind of a big deal to many
+							Universities in the area. It's a conference for most of the time, but there is also a programming contest and a robotics
+							contest. My Junior year, <a href="http://www.alexcash.com" target="_blank">Alex Cash</a>, a good friend of mine, and I decided to team up
+							and build a robot for the contest. We received Second place at the 2011 contest, our first year.
+							<br/><br/>
+							<a href="RoboMazeMICS_2011.pdf">2011 MICS Rules</a><br/>
+							<br/>
+							<a href="Robot_grid_world_2012.pdf">2012 MICS Rules</a>
+							
+							<br/><br/>
+							
+							<iframe src="http://www.youtube.com/embed/X8ftqeZnook"></iframe>
+							
+							This is our robot from the 2011 MICS competition. Alex Cash is doing the videoing and the narration. This is the robot
+							that got us Second place at the MICS competition. 
+							
+							<br/><br/>
+							
+							Our robot was, easily, the most robust design at the competition. We had the strongest algorithm and we had
+							the sturdiest and most thoughtout chasis. It just wasn't the fastest. But that was fine. We sacrificed the speed for
+							a more accurate turn and straighter driving. We went expecting to solve the mazes, not win any prizes. 
+							That was not our goal. We wanted to make a failproof robot. We succeeded that year.
+							
+							<iframe src="http://www.youtube.com/embed/uzuumELcttI"></iframe>
+							
+							This is our robot from the 2012 MICS competition. Alex Cash is doing the videoing and the narration. This robot didn't place
+							at MICS. We added a smarter drive home method that would actually fail on one general case. Sadly, both contest mazes were
+							easy enough that they fit those cases. So we basically crashed and burned. But we learned from it. We had spent so much time
+							making these horrible mazes, that we didn't a simple one.
+							
+							<br/><br/>
+							
+							The way we decide which way to go home is simple. Wwe keep a stack of all the coordinates that we have been to. 
+							So when it's time to go home, we just pop off the stack until we get to (0,0). I noticed that if we looped somewhere
+							(drove through a square, continued on, drove through the same square again, and continued again), we would be wasting valuable
+							time driving a loop on the way home. So I added a function to our stack called Cleanup(). When you call through Cleanup(), it
+							iterates through the Stack(which was really an array) and looked for a coordinate to be stored twice. If it found that coordinate,
+							it would remove all the coordinates between the duplicates, and the duplicate. If it found duplicates, it would start the search over
+							and look again to make sure that it found all the loops. It worked like a dream. The issue is, that when you work with stacks in Java,
+							you have to get clever with how you build them. Our solution was to fill an array with zeros and then change their values as we get to 
+							those indeces, while keeping a second variable that was the index of the top of the stack. So when we called Cleanup(), it would cleanup. 
+							It would look for the last set of nonzero coordinates and put index of the top of the stack there. But if there are no loops, it leaves
+							the index on the last set of (0,0) coordinates. This is a problem.
+							
+							<br/><br/>
+							
+							At the competition, we didn't realize our mistake until we failed the first maze. After starting the competition, you can't change your code.
+							So we were doomed to lose the other maze too. I did go grab our computer and fix the error, so that after we lost the competition, we reloaded
+							the code and, in front of the remaining audience, solved the puzzles, proving that we did have a solution. So even though we didn't get first
+							place, the audience knew that we deserved it. 
+							
+							<br/><br/>
+							
+							Alex and I built a robust robot that solved the puzzles for a second year.
+							
+							<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI"></iframe>
+							
+							This last video is of a particularly difficult puzzle. It's a bit of a tight squeeze. We redesigned our robot's chasis 
+							several times to bring its size down for tight mazes like this one. This video was taken pre-loop remover.
+							<br/><br/>
+							The code for our solutions are on <a href="https://github.com/littleanders2/Robotics-Solutions" target="_blank">Github</a>.
+							<br/><br/>
+							
+							Video of our failure at the MICS competition below.
+							<!--iframe src="http://www.youtube.com/embed/3ZoqgPOKeTA"></iframe-->
+							<video src="videos/MicsFail.mp4" controls preload=auto poster="images/RobotWork.jpg"></video>
+							Needless to say, we learned our lesson.
+							
+						</p>
+						<footer></footer>
+					</article>
+					<article id="Android">
+						<a  class="show_hide articleheader">Android Apps<img src="images/Show.png" alt="Show/Hide"></a>
+						
+						<p class="hidden">
+							<img alt="Droid Incredible" src="images/Droid.jpg" />
+							
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
+						</p>
+						<footer></footer>
+					</article>
+				</div>
+				<article id="Smith">
+					<a  class="show_hide articleheader pad">Smith and Associates<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Smith Logo" src="images/SmithLogo.jpg" />
+						<img alt="Smith" src="images/Smith.jpg" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="Coliseum">
+					<a  class="show_hide articleheader pad">The Coliseum Theater<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Platters" src="images/Platters.png" />
+						<img alt="Film Projector" src="images/FilmProjector.png" />
+						<!--img alt="Coliseum" src="images/Coliseum.jpg" /-->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="STA">
+					<a  class="show_hide articleheader pad">Student Technology Assistance Plus (STA+)<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Crane" src="images/Crane.jpg" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="Anders">
+					<a  class="show_hide articleheader pad">Anders Crane Service<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Grove TM250" src="images/TM250.png" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="BSA">
+					<a  class="show_hide articleheader pad">Boy Scouts of America<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Crane" src="images/Crane.jpg" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+							
+			</div>
+			<footer id="footer">
+				 &#169; 2012 Brian Anders. All rights reserved.
+			</footer>
+			<div id="foot">
+				Validate:
+				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
+			</div>
+			<div id="spacer">
+			</div>
+		</div>
+		<div id="navigate" style="display: none;">
+			<ul id="menu">
+				<li><a id=ToTop href="#Top">Top</a></li>
+				<li><a href="#P">Personal</a>
+					<ul class="inthea">
+						<li><a href="#iTunes">iTunes</a></li>
+						<li><a href="#iPhone">iPhone</a></li>
+						<li><a href="#Fishtank">Fish Tank</a></li>
+						<li><a href="#MAME">MAME</a></li>
+					</ul>
+				</li>
+				<li><a href="#Graceland">Graceland</a>
+					<ul class="inthea">
+						<li><a href="#ACM">ACM</a></li>
+						<li><a href="#Ackerley">Ackerley</a></li>
+						<li><a href="#Programming">Competition</a></li>
+						<li><a href="#Robot">Robotics</a></li>
+						<li><a href="#Android">Android</a></li>
+					</ul>
+				</li>
+				<li><a href="#Smith">Internships</a></li>
+				<li><a href="#Coliseum">Theater</a></li>
+				<li><a href="#STA">STA+</a></li>
+				<li><a href="#Anders">Cranes</a></li>
+				<li><a href="#BSA">Scouts</a></li>
+				
+			</ul>
+		</div>
+	</body>
+</html>
+

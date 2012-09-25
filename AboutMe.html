@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>   
+		<title> Brian Anders | About Me </title>
+		<link rel="stylesheet" type="text/css" href="clear.css">
+		<script type="text/javascript">
+
+			function getcss(cssfile){
+				loadcss = document.createElement('link')
+				loadcss.setAttribute("rel", "stylesheet")
+				loadcss.setAttribute("type", "text/css")
+				loadcss.setAttribute("href", cssfile)
+				document.getElementsByTagName("head")[0].appendChild(loadcss)
+
+				}
+
+				if(screen.width <= '999') 
+				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
+				{
+					getcss('small.css') 
+					// Defines the .css file you want to load for this range (800x600.css)
+				}
+				else 
+				{
+					getcss('style.css')
+					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
+				}
+
+		</script>
+
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<div><h2>Brian Anders | </h2><h3>About Me</h3></div>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="../Resume2/" class="lborder first">Home</a>
+					</li>
+					<li>
+						<a class="lborder selected">About Me</a>
+					</li>
+					<li>
+						<a href="Experience.html" class="lborder">Experience</a>
+					</li>
+					<li>
+						<a href="Education.html" class="lborder">Education</a>
+					</li>
+					<li>
+						<a href="References.html" class="rborder lborder last">References</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="main">
+				<article>
+					<header>Motorcycles</header>
+					<p>
+						<img alt="Motorcycle" src="images/Motorcycle.jpg" style="max-width: 50%; width: 50%;"/>
+						I own a Motorcycle. It's a 1999 Honda Nighthawk 750cc motorcycle. It's beautiful. My dream bike, though, is some awesome
+						harley davidson. Low to the ground, flat black, deep rumbling engine. No windshield. Very little chrome.
+					</p>
+					<footer></footer>
+				</article>
+				<article>
+					<header>Music</header>
+					<p>
+						<img alt="Drums" src="images/Drums.jpg" style="max-width: 50%; width: 50%;"/>
+						I play instruments.
+						<br/><br/>
+						When I was 4 years old, my parents started me in the Suzuki program on the violin, after my 8th birthday, my parents started me on 
+						the piano, and in 5th grade band, I started playing percussion. As you can see in the picture, I still play the drums. I play all my instruments 
+						still, but the drums are easily what I am the best and they are my favorite. 
+						I love music. It is a dream of mine to be in a rock band. I am rarely seen without my iPod. I had to get the largest iPod classic becuase they don't make iTouches big enough for my library.
+					</p>
+					<footer></footer>
+				</article>
+				<article>
+					<header>Cranes</header>
+					<p>
+						<img alt="Crane" src="images/Crane.jpg" style="max-width: 50%; width: 50%;"/>
+						I run cranes.
+					</p>
+					<footer></footer>
+				</article>	
+			</div>
+			
+			<footer id="footer">
+				 &#169; 2012 Brian Anders. All rights reserved.
+			</footer>
+			<div id="foot">
+				Validate:
+				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
+			</div>	
+		</div>
+	</body>
+</html>
+

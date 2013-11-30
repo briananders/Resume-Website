@@ -1,44 +1,47 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en><![endif]--> 
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=en><![endif]--> 
+<!--[if IE 8]><html class="no-js lt-ie9" lang=en><![endif]--> 
+<!--[if gt IE 8]><!--> <html class=no-js lang=en> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8"/>   
+		<meta name=description content="Brian Anders's Resume Website"> 
+		<meta name=author content="Brian Anders"> 
+		<meta name=viewport content="width=800, initial-scale=1">
 		<title> Brian Anders | References </title>
 		<link rel="stylesheet" type="text/css" href="css/clear.css">
-		<script type="text/javascript">
-			function getcss(cssfile){
-				loadcss = document.createElement('link')
-				loadcss.setAttribute("rel", "stylesheet")
-				loadcss.setAttribute("type", "text/css")
-				loadcss.setAttribute("href", cssfile)
-				document.getElementsByTagName("head")[0].appendChild(loadcss)
-
-				}
-
-			if(screen.width <= '999'){
-				getcss('css/small.css') 
-			}else {
-				getcss('css/style.css')
-			}
-		</script>
-
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[If lt IE 9]><style type="text/css">html{background: url("img/background.png");}</style><![endif]-->
 	</head>
 	<body>
-		<div id="container">
-			<header>
-				<div><h2>Brian Anders | </h2><h3>References</h3></div>
-			</header>
-			<nav>
+		<div id="top">
+			<div class="header">
+				<div id="profile"><img alt="My Head" src="img/Profile.png" /></div>
+				<h1>Brian Anders</h1>
+				<span>
+					Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
+				</span>
+				<div id="icons">
+					<a href="http://www.facebook.com/anders.brian" target="_blank"><img src="icons/facebook.png" alt="facebook"></a>
+					<a href="https://plus.google.com/u/0/103609977209431639131" target="_blank"><img src="icons/googleplus.png" alt="google+"></a>
+					<a href="https://twitter.com/#!/imBrianAnders" target="_blank"><img src="icons/tweeter.png" alt="twitter"></a>
+					<a href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a" target="_blank"><img src="icons/linkedin.png" alt="linkedin"></a>
+					<a href="mailto:brian.steven.anders@gmail.com"><img src="icons/mail.png" alt="email"></a>
+				</div>
+			</div>
+			<div class="nav">
 				<a href="./">Home</a>
 				<a href="AboutMe.html">About Me</a>
 				<a href="Experience.html">Experience</a>
 				<a href="Education.html">Education</a>
 				<a class="selected">References</a>
-			</nav>
-			
-			<div class="main ref">
+			</div>
+		</div>
+		<div id="container">
+			<div class="ref">
 				<img class="Prof" id="Brunner" src="img/KevinBrunner.png" alt="Kevin Brunner" />
-				<div class="spacer"></div>
+				
 				<span>
 					<strong>Kevin Brunner</strong>, Ph.D.,<br/>
 					Associate Professor of Information Technology<br/>
@@ -46,9 +49,9 @@
 					<a href="mailto:brunner@graceland.edu">brunner@graceland.edu</a>
 				</span>
 			</div>
-			<div class="main ref">
+			<div class="ref">
 				<img class="Prof" id="JJones" src="img/JimJones.png" alt="Jim Jones" />
-				<div class="spacer"></div>
+				
 				<span>
 					<strong>James Jones</strong>, Ph.D.,<br/>
 					Professor of Computer Science<br/>
@@ -56,9 +59,9 @@
 					<a href="mailto:jsjones@graceland.edu">jsjones@graceland.edu</a>
 				</span>
 			</div>
-			<div class="main ref">
+			<div class="ref">
 				<img class="Prof" id="Ellis" src="img/RonEllis.png" alt="Ron Ellis" />
-				<div class="spacer"></div>
+				
 				<span>
 					<strong>Ron Ellis</strong>, Ph.D.,<br/>
 					Director of Instructional Technology<br/>
@@ -66,9 +69,9 @@
 					<a href="mailto:ellis@graceland.edu">ellis@graceland.edu</a>
 				</span>
 			</div>
-			<div class="main ref">
+			<div class="ref">
 				<img class="Prof" id="Hamilton" src="img/BrittanyHamilton.png" alt="Brittany Hamilton" />
-				<div class="spacer"></div>
+				
 				<span>
 					<strong>Brittany Hamilton</strong><br/>
 					Manager of the Coliseum Theater<br/>
@@ -76,9 +79,9 @@
 					<a href="mailto:bhamilto@graceland.edu">bhamilto@graceland.edu</a>
 				</span>
 			</div>
-			<div class="main ref" style="margin-right: 0px;">
+			<div class="ref">
 				<img class="Prof" id="Cash" src="img/AlexCash.png" alt="Alex Cash" />
-				<div class="spacer"></div>
+				
 				<span>
 					<strong>Alex Cash</strong><br/>
 					Co-Founder, App Developer of Room 12 Studios, llc.<br/>
@@ -86,10 +89,9 @@
 					<a href="mailto:abcash@graceland.edu">abcash@graceland.edu</a>
 				</span>
 			</div>
-					
-			<footer id="footer">
-				 &#169; 2012 Brian Anders. All rights reserved.
-			</footer>
+			<div class="footer" id="footer">
+				&#169; 2012 Brian Anders. All rights reserved.
+			</div>
 			<div id="foot">
 				Validate:
 				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
@@ -98,4 +100,3 @@
 		</div>
 	</body>
 </html>
-

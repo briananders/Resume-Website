@@ -10,20 +10,14 @@
         var options = $.extend(defaults, options);
  
         $(this).click(function () {
-			// optionally add the class .toggleDiv to each div you want to automatically close
              $('.toggleDiv').slideUp(options.speed, options.easing);
-             // this var stores which button you've clicked
              var toggleClick = $(this);
-             // this reads the rel attribute of the button to determine which div id to toggle
-             //var toggleDiv = $(this).attr('rel');
-			 var toggleDiv = $(this).siblings('p');
-             // here we toggle show/hide the correct div at the right speed and using which easing effect
+             var toggleDiv = $(this).siblings('p');
              $(toggleDiv).slideToggle(options.speed, options.easing, function() {
-             // this only fires once the animation is completed
 
              if(options.changeText==1){
-				$(toggleDiv).is(":visible") ? toggleClick.children("span").text(options.hideText) : toggleClick.children("span").text(options.showText);
-				$(toggleDiv).is(":visible") ? toggleClick.children("img").attr("src", options.hideImg) : toggleClick.children("img").attr("src", options.showImg);
+                $(toggleDiv).is(":visible") ? toggleClick.children("span").text(options.hideText) : toggleClick.children("span").text(options.showText);
+                $(toggleDiv).is(":visible") ? toggleClick.children("img").attr("src", options.hideImg) : toggleClick.children("img").attr("src", options.showImg);
              }
            });
  

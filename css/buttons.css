@@ -1,0 +1,15 @@
+#schangers a {
+	margin-bottom: 8px;
+	padding: 5px 5px;
+	width: 100%;
+	display: block;
+	background: #fff;
+	color: #444;
+	font-size: 17px;
+	z-index: 100;
+}
+
+#schangers a:hover {	
+	color: rgb(00,230,255);
+	cursor: pointer;
+}

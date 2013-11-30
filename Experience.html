@@ -9,42 +9,55 @@
 		<meta name=author content="Brian Anders"> 
 		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
 		<title> Brian Anders | Experience </title>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/clear.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--[If lt IE 8]><style type="text/css">.header > .right {display: none;}</style><![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300|Raleway:200' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="favico.ico">
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-		<script src="js/HideShow.js"></script>
-		<script src="js/modernizr-1.0.min.js"></script>
-		
-		<style type="text/css">
-			
-		</style>
-		
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
+		<link rel="stylesheet" type="text/css" href="css/transitions.css">
+		<link rel="stylesheet" type="text/css" href="css/buttons.css">
+		<link id="mainstyle" rel="stylesheet" type="text/css" href="css/light.css">
+
+		<script src="js/libs/jquery-1.8.2.min.js"></script>
+		<script src="js/libs/HideShow.js"></script>
+		<script src="js/libs/settings.js"></script>
+		<script src="js/libs/modernizr-2.5.3.min.js"></script>
 	</head>
 	<body>
-		<header id="top">
-			<div id="profilewrap"><div id="profile" class="img"></div></div>
-			<h1>Brian Anders</h1>
-			<span>
-				Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-			</span>
-			<div id="icons">
-				<a target="_blank" title="My Facebook" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
-				<a target="_blank" title="My Google+" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
-				<a target="_blank" title="My Twitter" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
-				<a target="_blank" title="My LinkedIn" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
-				<a id="gmail" title="Email Me" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
-				<a id="github" target="_blank" title="My Github" href="https://github.com/briananders"><img alt="github" src="icons/github1.png"></a>
-			</div>
-			<nav>
-				<a href="./">Home</a>
-				<a href="AboutMe.html">About Me</a>
-				<a href="Experience.html" class="selected">Experience</a>
-				<a href="Education.html">Education</a>
-				<a href="References.html">References</a>
-			</nav>
+		<a id="settings"></a>
+		<div id="schangers" class="out">
+			<strong>Styles</strong>
+			<a id="dark" class="scb" value="dark">Dark</a>
+			<a id="apple" class="scb" value="apple">Apple</a>
+			<a id="google" class="scb" value="google">Google</a>
+			<a id="microsoft" class="scb" value="microsoft">Microsoft</a>
+			<a id="light" class="scb" value="light">Light</a>
+			<a id="iOS" class="scb" value="iOS">iOS</a>
+		</div>
+		<header id="topwrap">
+			<header id="top">
+				<div id="profilewrap"><div id="profile" class="img"></div></div>
+				<h1>Brian Anders</h1>
+				<span>
+					Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
+				</span>
+				<div id="icons">
+					<a target="_blank" title="My Facebook" id="facebook" href="http://www.facebook.com/anders.brian"></a>
+					<a target="_blank" title="My Google+" id="googleplus" href="https://plus.google.com/u/0/103609977209431639131"></a>
+					<a target="_blank" title="My Twitter" id="twitter" href="https://twitter.com/#!/imBrianAnders"></a>
+					<a target="_blank" title="My LinkedIn" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"></a>
+					<a id="gmail" title="Email Me" href="mailto:brian.steven.anders@gmail.com"></a>
+					<a id="github" target="_blank" title="My Github" href="https://github.com/briananders"></a>
+				</div>
+				<nav>
+					<div id="navwrap">
+						<a href="./">Home</a>
+						<a href="AboutMe.html">About Me</a>
+						<a href="Experience.html" class="selected">Experience</a>
+						<a href="Education.html">Education</a>
+						<a href="References.html">References</a>
+					</div>
+				</nav>
+			</header>
 		</header>
 			
 		<div id="container">
@@ -161,7 +174,7 @@
 					</article>
 					<article id="STA" >
 						<header class="show_hide">
-							Student Technology Assistance Plus (STA+)<br/>
+							Student Technology Assistants Plus (STA+)<br/>
 							<span class="place">Lamoni, IA</span><br/>
 							<span class="title">Student Representative</span>
 							<span class="right">Fall 2009 - Present</span>
@@ -170,7 +183,7 @@
 						<p class="hidden">
 							<img alt="STA Badge" src="img/sta.jpg" />		
 							
-							At Graceland, one of the jobs I work is called STA+ (Student Technical Representatives Plus). The plus is there to include "everything else". At STA+ we help students, faculty, and staff with any tech problems they have. From things as small as "I need a data projector set up for my class at this location" to things as large as "we need you to totally rewire this smartcart for newer technology". It is a really great job and while working there, I have gotten to see all sides of technology. For instance, one of our last projects was to setup a server to broadcast announcements on a new channel at Graceland. At STA+ we get exposure to all sorts of technology. No discrimination; Mac OS, Windows, Linux, iOS devices, Androids, etc. We work with it all.
+							At Graceland, one of the jobs I work is called STA+ (Student Technical Assistants Plus). The plus is there to include "everything else". At STA+ we help students, faculty, and staff with any tech problems they have. From things as small as "I need a data projector set up for my class at this location" to things as large as "we need you to totally rewire this smartcart for newer technology". It is a really great job and while working there, I have gotten to see all sides of technology. For instance, one of our last projects was to setup a server to broadcast announcements on a new channel at Graceland. At STA+ we get exposure to all sorts of technology. No discrimination; Mac OS, Windows, Linux, iOS devices, Androids, etc. We work with it all.
 							
 						</p>
 						<footer></footer>

@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en><![endif]--> 
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=en><![endif]--> 
 <!--[if IE 8]><html class="no-js lt-ie9" lang=en><![endif]--> 
 <!--[if gt IE 8]><!--> <html class=no-js lang=en> <!--<![endif]-->
 	<head>
-		<meta charset="utf-8"/>   
+		<meta charset="utf-8">
 		<meta name=description content="Brian Anders's Resume Website"> 
 		<meta name=author content="Brian Anders"> 
-		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
-
+		<meta name=viewport content="width=920, initial-scale=1">
 		<title>Page Not Found :(</title>
 
 		<style>
@@ -31,8 +29,8 @@
 			}
 			html, input { 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 			}
-			body { 	max-width: 500px; 
-					width: 500px; 
+			body { 	max-width: 1100px; 
+					width: 1100px; 
 					padding: 30px 20px 50px; 
 					border: 1px solid #b3b3b3; 
 					border-radius: 4px; 
@@ -66,41 +64,115 @@
 			input::-moz-focus-inner { 	padding: 0; 
 										border: 0; 
 			}
-			
-			nav {
-				width: 490px;
-				height: 40px;
+
+			.main { max-width: 956px; 
+					width: 956px; 
+					margin: 0 auto; 
 			}
-			nav a{
-				color: #737373;
+				
+			nav {
 				font-size: 16px;
-				padding: 9px 0px;
-				text-decoration: none;
-				width: 97px;
-				text-align: center;
-				overflow: hidden;
-				display: block;
+				width: 956px;
+				height: 48px;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				padding: 0;
+				margin: 20px 0;
+			}
+			nav ul{
+				list-style: none;
+				width: 956px;
+				height: 48px;
+				padding: 0;
+				margin: 0;
+			}
+			nav ul li:first-child a{
+				border-left: 1px solid #aaaaaa;
+				border-top:  1px solid #aaaaaa;
+				border-bottom: 1px solid #aaaaaa;
+				border-radius: 10px 0 0 10px;
+			}
+			nav ul li:last-child a{	
+				border-right: 1px solid #aaaaaa;
+				border-top:  1px solid #aaaaaa;
+				border-bottom: 1px solid #aaaaaa;
+				border-radius: 0 10px 10px 0;
+			}
+			nav li{
+				height: 48px;
 				float: left;
-				font-size: 16px;
+			}
+			nav li a {
+				padding: 12px 0;
+				text-decoration: none;
+				text-align: center;
+				display: inline;
+				float: left;
+				width: 190px;
+				font-weight: 700;
+				text-shadow: 0 1px 0 #bbbbbb;
+				color: #222222;
+					
+				background: white;
+				
+				border-top: 1px solid #aaaaaa;
+				border-bottom: 1px solid #aaaaaa;
+				border-left: 1px solid #aaaaaa;
+								
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
 			}
 			nav a:hover {
-				text-decoration: underline;
-				color: #800080;
+				-moz-box-shadow:    inset 0 0 3px #444;
+				-webkit-box-shadow: inset 0 0 3px #444;
+				box-shadow:         inset 0 0 3px #444;
 			}
-			
-			
 
 		</style>
+		<script type="text/javascript">
+			function getcss(cssfile){
+				loadcss = document.createElement('link')
+				loadcss.setAttribute("rel", "stylesheet")
+				loadcss.setAttribute("type", "text/css")
+				loadcss.setAttribute("href", cssfile)
+				document.getElementsByTagName("head")[0].appendChild(loadcss)
+
+				}
+
+			if(screen.width <= '999'){
+				getcss('css/small.css') 
+			}else {
+				getcss('css/small.css')
+			}
+		</script>
 		<script src="js/libs/modernizr-2.5.3.min.js"></script>
 	</head>
 	<body>
-		<nav>
-			<a href="./">Home</a>
-			<a href="AboutMe.html">About Me</a>
-			<a href="Experience.html">Experience</a>
-			<a href="Education.html">Education</a>
-			<a href="References.html">References</a>
-		</nav>
+		<div class="main">
+			<nav>
+				<ul>
+					<li>
+						<a href="../Resume1/">Home</a>
+					</li>
+					<li>
+						<a href="AboutMe.html">About Me</a>
+					</li>
+					<li>
+						<a href="Experience.html">Experience</a>
+					</li>
+					<li>
+						<a href="Education.html">Education</a>
+					</li>
+					<li>
+						<a href="References.html">References</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<div class="container">
 			<h1>Not found <span>:(</span></h1>
 			<p>Sorry, but the page you were trying to view does not exist.</p>

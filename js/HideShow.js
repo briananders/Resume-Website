@@ -5,7 +5,14 @@
         var defaults = {
             speed: 1000,
             easing: '',
-            changeText: 0
+            changeText: 0,
+            showText: 'Show/Hide',
+            hideText: 'Hide', // the button text to show when a div is open
+		showSign: "+",
+		hideSign: "-",
+		showImg: "img/Show.png",
+		hideImg: "img/Hide.png"
+ 
         };
         var options = $.extend(defaults, options);
  
@@ -36,9 +43,17 @@
 
 
 $(document).ready(function(){
+ 
    $('.show_hide').showHide({
         speed: 400,  // speed you want the toggle to happen
         easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
-        changeText: 1 // if you dont want the button text to change, set this to 0
+        changeText: 1, // if you dont want the button text to change, set this to 0
+        showText: 'Show',// the button text to show when a div is closed
+        hideText: 'Hide', // the button text to show when a div is open
+		showSign: "+",
+		hideSign: "--",
+		showImg: "img/Show.png",
+		hideImg: "img/Hide.png"
     });
+ 
 });

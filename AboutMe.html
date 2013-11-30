@@ -4,9 +4,8 @@
 	<head>
 		<meta charset="utf-8"/>   
 		<title> Brian Anders | About Me </title>
-		<link rel="stylesheet" type="text/css" href="clear.css">
+		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<script type="text/javascript">
-
 			function getcss(cssfile){
 				loadcss = document.createElement('link')
 				loadcss.setAttribute("rel", "stylesheet")
@@ -16,18 +15,11 @@
 
 				}
 
-				if(screen.width <= '999') 
-				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
-				{
-					getcss('small.css') 
-					// Defines the .css file you want to load for this range (800x600.css)
-				}
-				else 
-				{
-					getcss('style.css')
-					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
-				}
-
+			if(screen.width <= '999'){
+				getcss('css/small.css') 
+			}else {
+				getcss('css/style.css')
+			}
 		</script>
 
 	</head>
@@ -39,27 +31,27 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="../Resume2/" class="lborder first">Home</a>
+						<a href="../Resume1/">Home</a>
 					</li>
 					<li>
-						<a class="lborder selected">About Me</a>
+						<a class="selected">About Me</a>
 					</li>
 					<li>
-						<a href="Experience.html" class="lborder">Experience</a>
+						<a href="Experience.html">Experience</a>
 					</li>
 					<li>
-						<a href="Education.html" class="lborder">Education</a>
+						<a href="Education.html">Education</a>
 					</li>
 					<li>
-						<a href="References.html" class="rborder lborder last">References</a>
+						<a href="References.html">References</a>
 					</li>
 				</ul>
 			</nav>
-			<div id="main">
+			<div class="main">
 				<article>
 					<header>Motorcycles</header>
 					<p>
-						<img alt="Motorcycle" src="images/Motorcycle.jpg" style="max-width: 50%; width: 50%;"/>
+						<img alt="Motorcycle" src="img/Motorcycle.jpg" style="max-width: 50%; width: 50%;"/>
 						I own a Motorcycle. It's a 1999 Honda Nighthawk 750cc motorcycle. It's beautiful. My dream bike, though, is some awesome
 						harley davidson. Low to the ground, flat black, deep rumbling engine. No windshield. Very little chrome.
 					</p>
@@ -68,7 +60,7 @@
 				<article>
 					<header>Music</header>
 					<p>
-						<img alt="Drums" src="images/Drums.jpg" style="max-width: 50%; width: 50%;"/>
+						<img alt="Drums" src="img/Drums.jpg" style="max-width: 50%; width: 50%;"/>
 						I play instruments.
 						<br/><br/>
 						When I was 4 years old, my parents started me in the Suzuki program on the violin, after my 8th birthday, my parents started me on 
@@ -81,7 +73,7 @@
 				<article>
 					<header>Cranes</header>
 					<p>
-						<img alt="Crane" src="images/Crane.jpg" style="max-width: 50%; width: 50%;"/>
+						<img alt="Crane" src="img/Crane.jpg" style="max-width: 50%; width: 50%;"/>
 						I run cranes.
 					</p>
 					<footer></footer>

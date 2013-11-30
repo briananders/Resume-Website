@@ -43,3 +43,6 @@ Thumbs.db
 /icons
 *.jpg
 *.png
+*.doc
+*.docx
+*.pdf

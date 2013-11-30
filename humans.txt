@@ -3,18 +3,18 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  <your title>: Brian Anders
+  Site: personal.graceland.edu/~bsanders
+  Twitter: imBrianAnders
+  Location: Lamoni, IA
 
 /* THANKS */
-  Names (& URL):
+  Names (& URL): Al Gore for inventing the internet.
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software:
+  Software: Transmit, Sublime Text, Notepad++, WinSCP, Safari, Chrome, Firefox, IE, xCode, Mobile Opera
 
 
 

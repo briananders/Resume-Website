@@ -13,96 +13,62 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/clear.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<style type="text/css">
-			html{
-				background: url("img/background.png");
-				
-				animation: fadein 30s;
-				-o-animation: fadein 30s;
-				-ms-animation: fadein 30s;
-				-moz-animation: fadein 30s;
-				-webkit-animation: fadein 30s;
-				
-				animation-iteration-count: 1;
-				-o-animation-iteration-count: 1;
-				-ms-animation-iteration-count: 1;
-				-moz-animation-iteration-count: 1;
-				-webkit-animation-iteration-count: 1;
-			}
-
-			@keyframes fadein
-			{
-				from {background: url("img/background2.png");}
-				to {background: url("img/background.png");}
-			}
-
-			@-moz-keyframes fadein /* Firefox */
-			{
-				from {background: url("img/background2.png");}
-				to {background: url("img/background.png");}
-			}
-
-			@-webkit-keyframes fadein /* Safari and Chrome */
-			{
-				from {background: url("img/background2.png");}
-				to {background: url("img/background.png");}
-			}
-		</style>
-		<!--[If lt IE 9]><style type="text/css">html{background: url("img/background.png");}</style><![endif]-->
+		<script src="js/modernizr-1.0.min.js"></script>
 	</head>
 	<body>
-		<div id="top">
-			<div class="header">
-				<div id="profile"><img alt="My Head" src="img/Profile.png" /></div>
-				<h1>Brian Anders</h1>
-				<span>
-					Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-				</span>
-				<div id="icons">
-					<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
-					<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
-					<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
-					<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
-					<a id="gmail" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
-				</div>
+		<header id="top">
+			<div id="profilewrap"><div id="profile" class="img"></div></div>
+			<h1>Brian Anders</h1>
+			<span>
+				Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
+			</span>
+			<div id="icons">
+				<a target="_blank" title="My Facebook" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
+				<a target="_blank" title="My Google+" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
+				<a target="_blank" title="My Twitter" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
+				<a target="_blank" title="My LinkedIn" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
+				<a id="gmail" title="Email Me" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
+				<a id="github" target="_blank" title="My Github" href="https://github.com/briananders"><img alt="github" src="icons/github1.png"></a>
 			</div>
-			<div class="nav">
-				<a class="selected">Home</a>
+			<nav>
+				<a href="./" class="selected">Home</a>
 				<a href="AboutMe.html">About Me</a>
 				<a href="Experience.html">Experience</a>
 				<a href="Education.html">Education</a>
 				<a href="References.html">References</a>
-			</div>
-		</div>
+			</nav>
+		</header>
 			
 		<div id="container">
-			<div class="article">
-				<div class="header">Who am I?</div>
+			<article>
+				<header>Welcome to my r&#xE9;sum&#xE9;</header>
 				<p>
-					I am a Computer Scientist, Web Designer, Mathematician, and Musician.
-					<br/><br/>
-					I am currently a Senior at <a href="http://www.graceland.edu/" target="_blank">Graceland University</a> in <a href="http://www.lamoni-iowa.com/" target="_blank">Lamoni, Iowa</a> pursuing a degree in Computer Science/Information Technology, a degree in Mathematics, and a minor in Web Design.
-					<br/><br/>
-					My formal resum&#233;: <a href="docs/Resume.pdf">PDF</a> <a href="docs/Resume.docx">.docx</a>  <a href="docs/Resume.doc">.doc</a>
-					<br/><br/>
-					You can contact me via: 
+					This is the web version of my r&#xE9;sum&#xE9;. I created it to hopefully give you a more in-depth look at who I am and why you should hire me. Feel free to wander around.<br/>
 					<br/>
-					<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian">Facebook</a>, 
-					<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131">Google+</a>, 
-					<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders">Twitter</a>, 
-					<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a">LinkedIn</a>, 
-					<a id="gmail" href="mailto:brian.steven.anders@gmail.com">Gmail</a>
-					<br/><br/>
-					Feel free to look around the site and learn about me.
+					First of all, I am a tech enthusiast. I dream in code. It would be a huge mistake to overlook me or underestimate me. Give me a chance to blow you away with my skills and passion for my field.<br/>
 					<br/>
+					I am currently a fifth year Senior at <a href="http://www.graceland.edu/" target="_blank">Graceland University</a>, in <a href="http://www.lamoni-iowa.com/" target="_blank">Lamoni, Iowa</a>, pursuing a degree in Computer Science/Information Technology, a degree in Mathematics, and a minor in Web Design.
+					<br/><br/>
+					My formal <a href="docs/Resume.pdf">r&#xE9;sum&#xE9;.pdf</a>
+					<br/><br/>
+					You can contact me at: 
+					<br/>
+					<a target="_blank" href="http://www.facebook.com/anders.brian">Facebook</a>, 
+					<a target="_blank" href="https://plus.google.com/u/0/103609977209431639131">Google+</a>, 
+					<a target="_blank" href="https://twitter.com/#!/imBrianAnders">Twitter</a>, 
+					<a target="_blank" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a">LinkedIn</a>, 
+					<a href="mailto:brian.steven.anders@gmail.com">Email</a>
+					<br/>
+					<br/>
+					Or you can check out snippets of my code on <a target="_blank" href="https://github.com/briananders">GitHub</a>.
 				</p>
 				
-				<div class="footer"></div>
-			</div>
-			<div class="footer" id="footer">
-				&#169; 2012 Brian Anders. All rights reserved. <br/>
-			All HTML, CSS and Javascript/JQuery written or modified by Brian Anders
-			</div>
+				<footer></footer>
+			</article>
+			<footer id="footer">
+				&#169; 2012 Brian Anders<br/>
+			All HTML, CSS and JavaScript/JQuery written or modified by Brian Anders
+			</footer>
 			<div id="foot">
 				Validate:
 				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>

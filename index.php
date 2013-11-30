@@ -6,66 +6,216 @@
 	<head>
 		<meta charset="utf-8"/>   
 		<meta name=description content="Brian Anders's Resume Website"> 
-		<meta name=author content="Brian Anders"> 
+		<meta name=author content="Brian Anders"> 		
 		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
-		<title> Brian Anders | Experience </title>
+		<title>Brian Anders | Home</title>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300|Raleway:200' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="favico.ico">
 
-		<link rel="stylesheet" type="text/css" href="css/clear.css">
-		<link rel="stylesheet" type="text/css" href="css/transitions.css">
-		<link rel="stylesheet" type="text/css" href="css/buttons.css">
-		<link id="mainstyle" rel="stylesheet" type="text/css" href="css/light.css">
-
 		<script src="js/libs/jquery-1.8.2.min.js"></script>
-		<script src="js/libs/HideShow.js"></script>
-		<script src="js/libs/settings.js"></script>
 		<script src="js/libs/modernizr-2.5.3.min.js"></script>
+		<script src="js/libs/settings.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link rel="stylesheet" type="text/css" href="css/buttons.css">
+		<link id="mainstyle" rel="stylesheet" type="text/css" href="css/styles/Main.css">
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$("#Home").slideDown();
+
+			    var debug = false;
+			
+			    if(debug) { 
+			    	setTimeout(function () {
+				        window.location.reload();
+				    }, 3000); 
+			    }
+			});
+		</script>
 	</head>
 	<body>
-		<a id="settings"></a>
+		<a id="settings"><div id="insidesettings"></div></a>
 		<div id="schangers" class="out">
 			<strong>Styles</strong>
-			<a id="dark" class="scb" value="dark">Dark</a>
-			<a id="apple" class="scb" value="apple">Apple</a>
-			<a id="google" class="scb" value="google">Google</a>
-			<a id="microsoft" class="scb" value="microsoft">Microsoft</a>
-			<a id="light" class="scb" value="light">Light</a>
-			<a id="iOS" class="scb" value="iOS">iOS</a>
+
+			<a class='scb selected' id="Main" value="Main">Main</a>
+
+			<?php
+				// open this directory 
+				$myDirectory = opendir("./css/styles");
+
+				// get each entry
+				while($entryName = readdir($myDirectory)) {
+					$dirArray[] = $entryName;
+				}
+
+				// close directory
+				closedir($myDirectory);
+
+				//	count elements in array
+				$indexCount	= count($dirArray);
+
+				// sort 'em
+				sort($dirArray);
+
+				// loop through the array of files and print them all
+				for($index=0; $index < $indexCount; $index++) 
+				{
+					if (substr("$dirArray[$index]", 0, 1) != "." && $dirArray[$index] != "Main.css")
+					{
+						$value = substr($dirArray[$index], 0, strlen($dirArray[$index])-4);
+						print("<a class='scb' id=\"$value\" value=\"$value\">$value</a>");
+					}
+				}
+
+			?>
 		</div>
-		<header id="topwrap">
-			<header id="top">
-				<div id="profilewrap"><div id="profile" class="img"></div></div>
-				<h1>Brian Anders</h1>
-				<span>
-					Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-				</span>
-				<div id="icons">
-					<a target="_blank" title="My Facebook" id="facebook" href="http://www.facebook.com/anders.brian"></a>
-					<a target="_blank" title="My Google+" id="googleplus" href="https://plus.google.com/u/0/103609977209431639131"></a>
-					<a target="_blank" title="My Twitter" id="twitter" href="https://twitter.com/#!/imBrianAnders"></a>
-					<a target="_blank" title="My LinkedIn" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"></a>
-					<a id="gmail" title="Email Me" href="mailto:brian.steven.anders@gmail.com"></a>
-					<a id="github" target="_blank" title="My Github" href="https://github.com/briananders"></a>
-				</div>
-				<nav>
-					<div id="navwrap">
-						<a href="./">Home</a>
-						<a href="AboutMe.html">About Me</a>
-						<a href="Experience.html" class="selected">Experience</a>
-						<a href="Education.html">Education</a>
-						<a href="References.html">References</a>
-					</div>
-				</nav>
-			</header>
+		<header id="top">
+			<div id="profilewrap"><img id="profile" src="img/5LayerProfile-940.png" alt="Profile Picture"></div>
+			<h1>Brian Anders</h1>
+			<h2>Programmer</h2>
+			<div id="icons">
+				<a target="_blank" title="My Facebook" id="facebook" href="http://www.facebook.com/anders.brian"></a>
+				<a target="_blank" title="My Google+" id="googleplus" href="https://plus.google.com/u/0/103609977209431639131"></a>
+				<a target="_blank" title="My Twitter" id="twitter" href="https://twitter.com/#!/imBrianAnders"></a>
+				<a target="_blank" title="My LinkedIn" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"></a>
+				<a id="gmail" title="Email Me" href="mailto:brian.steven.anders@gmail.com"></a>
+				<a id="github" target="_blank" title="My Github" href="https://github.com/briananders"></a>
+			</div>
 		</header>
+		<nav>
+			<div id="navwrap">
+				<a value="Home" class="selected">Home</a>
+				<a value="AboutMe" >About Me</a>
+				<a value="Experience" >Experience</a>
+				<a value="Education" >Education</a>
+				<a value="References" >References</a>
+			</div>
+		</nav>
+		<div class="container" id="Home" >
+			<div>
+				<header>Welcome to my r&#xE9;sum&#xE9;</header>
+				<p>
+					This is the web version of my r&#xE9;sum&#xE9;. I created it to hopefully give you a more in-depth look at who I am and why you should hire me. Feel free to wander around.<br/>
+					<br/>
+					First of all, I am a tech enthusiast. I dream in code. It would be a huge mistake to overlook me or underestimate me. Give me a chance to blow you away with my skills and passion for my field.<br/>
+					<br/>
+					I am currently a fifth year Senior at <a href="http://www.graceland.edu/" target="_blank">Graceland University</a>, in <a href="http://www.lamoni-iowa.com/" target="_blank">Lamoni, Iowa</a>, pursuing a degree in Computer Science/Information Technology, a degree in Mathematics, and a minor in Web Design.
+					<br/><br/>
+					My formal <a href="docs/BrianAndersResume.pdf">r&#xE9;sum&#xE9;.pdf</a>
+					<br/><br/>
+					You can contact me at: 
+					<br/>
+					<a target="_blank" href="http://www.facebook.com/anders.brian">Facebook</a>, 
+					<a target="_blank" href="https://plus.google.com/u/0/103609977209431639131">Google+</a>, 
+					<a target="_blank" href="https://twitter.com/#!/imBrianAnders">Twitter</a>, 
+					<a target="_blank" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a">LinkedIn</a>, 
+					<a href="mailto:brian.steven.anders@gmail.com">Email</a>
+					<br/>
+					<br/>
+					Or you can check out snippets of my code on <a target="_blank" href="https://github.com/briananders">GitHub</a>.
+				</p>
+				
+				<footer></footer>
+			</div>
+		</div>
+		<div class="container" id="AboutMe" >
+			<div>
+				<header>Web Design</header>
+				<p>
+					<img alt="Web Design" src="img/WebDesign.png"/>
+					Web Design is fascinating.<br/>
+					<br/>						
+					Making this website was one of the most fun things I have ever done. It was certainly challenging and it is constantly evolving. I'm sure it is not as great as it could be, but it is a great pet project of mine. <br/>
+					<br/>
+					Working on this site allows me to hone my skills in the web sphere. I have worked a lot on many other web projects, but regrettably they are under FDAs with my previous employers. Invariably, the thing I spend the most time on is the CSS. The look of a website is crucial to whether or not it is seen as valuable. <br/>
+					<br/>
+					For instance, Craigslist is a pretty decent site for what it is used for, but I rarely visit it because I hate the way it looks. I think it is one of the ugliest websites I have ever seen. To me it is unacceptable that the people there don't seem to care about the aesthetic of their website design.<br/>
+					<br/>
+					To me, the web is the future of technology. I hope to ride this wave. I want to live on the bleeding edge of web technology. I want to make the websites that blow people out of the water with their elegant designs and flawless interfaces.
+				</p>
+				<footer></footer>
+			</div>	
+			<div>
+				<header>User Experience</header>
+				<p>
+					<img alt="Mouse" src="img/Mouse.jpg"/>
+					Throughout the years, I have built up this expectation in the world. All things should have a better interface. In my opinion, you cannot create a perfect interface unless it interfaces directly with your thoughts and intentions. <br/>
+					<br/>
+					Since that is not possible yet, I believe it is my mission (and should be everybody's mission), to try to make the world interface better. I find myself, all the time, saying "This has a bad interface." <br/>
+					<br/>
+					I spend a lot of time thinking about how some interface can be made better. Like iTunes; it's nice, but it's not perfect. I'm that crazy guy that looks at Apple products and thinks, "this could be better."
+				</p>
+				<footer></footer>
+			</div>	
+			<div>
+				<header>Motorcycles</header>
+				<p>
+					<img alt="Motorcycle" src="img/Motorcycle.jpg"/>
+					I own a Motorcycle. It is a 1999 Honda Nighthawk 750cc motorcycle. It is beautiful. Every now and then it is really nice to just hop on the bike and go for a ride in the countryside.
+				</p>
+				<footer></footer>
+			</div>
+			<div>
+				<header>Playing Music</header>
+				<p>
+					<img alt="Drums" src="img/Drums.jpg"/>
+					I play instruments.
+					<br/><br/>
+					When I was 4 years old, I started in the Suzuki program on the violin. After my 8th birthday, I started playing the piano. In 5th grade band, I started playing percussion. As you can see in the picture, I still play the drums. <br/><br/>
+					I still play all my instruments, but the drums are easily what I am the best at and they are my favorite to play. 
+				</p>
+				<footer></footer>
+			</div>
+			<div>
+				<header>Absorbing Music</header>
+				<p>
+					<img alt="Speakers" src="img/Speakers.jpg"/>
+					I love music. I have a deep passion for music. I have an extensive music collection that I have been building up over many years. I have to have and iPod Classic to hold all my music and audio books. <br/>
+					<br/>
+					Some of my favorite bands include The Beatles, Foxy Shazam, Foo Fighters, Billy Joel, The Beach Boys, Awolnation, Blink 182, Lostprophets, Queens of the Stone Age, The Strokes, and many many more.<br/>
+					<br/>
+					I am also a big fan of classical and orchestral music. Some of my favorite orchestral music comes from movie soundtracks. Some examples would be John Williams works in Indiana Jones, Star Wars, and Jurassic Park. The work of Thomas Newman in Road to Perdition is one of my favorites too. 
+				</p>
+				<footer></footer>
+			</div>	
+			<div>
+				<header>Movies</header>
+				<p>
+					<img alt="Movies" src="img/Movies.jpg"/>
+					Fact: Movies are great. I am always trying to stay on top of the latest and greatest movie releases. I follow the movies of several directors. Some of my favorites include David Fincher, Steven Spielberg, J.J. Abrams, Guy Ritchie, and Christopher Nolan. I also follow the movies of some actors too.<br/>
+					<br/>
+					Movies allow one to experience the world through a different set of eyes. Movies have expanded my perspectives in countless ways. I believe that I would be a very different person without my history with film.
+				</p>
+				<footer></footer>
+			</div>	
 			
-		<div id="container">
-			<article id="Skills" class="outside">
+			<div>
+				<header>Cranes</header>
+				<p>
+					<img alt="Crane" src="img/Crane.jpg"/>
+					My Dad owns a crane business as a hobby. He grew up running cranes and couldn't give them up even after getting his Ph.D. and becoming a full time professor of Economics. <br/>
+					<br/>
+					Naturally, I followed in his footsteps and grew up work with the cranes. Working with the cranes has given me many excellent skills. Part of the reason that I am so great at communicating is due to all the different people that I meet while doing crane work all over Iowa and Missouri. <br/>
+					<br/>
+					You meet all sorts while doing crane work and to keep things from getting weird, you need to be able to relate to people and converse well. <br/>
+					<br/>
+					Another skill that seems a bit more obvious is my technical and mechanical knowledge. It isn't too difficult for me to take apart almost anything and put it back together. I am a general Mr. Fix-it for many of my friends and where I work.<br/>
+					<br/>
+					Surprisingly, the beginnings of my mathematical aptitude started with the cranes. There is a lot of math behind lifting things. Tensile strength of cables, hydraulic pressures, cylinder diameters and their pressure capacities, etc. It all comes down to finding or creating a mechanical advantage. 
+				</p>
+				<footer></footer>
+			</div>
+		</div>
+		<div class="container" id="Experience" >
+			<div id="Skills" class="outside">
 				<header>Skills</header>
 			
 				<div class="inside">
-					<article id="Technical" >
+					<div id="Technical" >
 						<header class="show_hide">Technical Skills</header>
 						
 						<p class="hidden">
@@ -77,8 +227,8 @@
 						
 						</p>
 						<footer></footer>
-					</article>
-					<article id="General" >
+					</div>
+					<div id="General" >
 						<header class="show_hide">General Skills</header>
 						
 						<p class="hidden">
@@ -90,19 +240,19 @@
 						
 						</p>
 						<footer></footer>
-					</article>
+					</div>
 					
 					<footer></footer>
 				</div>
 				<footer></footer>
-			</article>
-			<article id="Work" class="outside">
+			</div>
+			<div id="Work" class="outside">
 				<header>Work Experience</header>
 				
 				<div class="inside">
-					<article id="Principal" >
+					<div id="Principal" >
 						<header class="show_hide">
-							Principal Financial Group<br/>
+							<span class="company">Principal Financial Group</span><br/>
 							<span class="place">Des Moines, IA</span><br/>
 							<span class="title">Corporate Services IT Java Development Intern</span>
 							<span class="right">Summer 2012</span>
@@ -126,10 +276,10 @@
 							
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Smith" >
+					</div>
+					<div id="Smith" >
 						<header class="show_hide">
-							Smith and Associates<br/>
+							<span class="company">Smith and Associates</span><br/>
 							<span class="place">Houston, TX</span><br/>
 							<span class="title">Software Devlopment Intern</span>
 							<span class="right">Summer 2011</span>
@@ -147,10 +297,10 @@
 							
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Coliseum" >
+					</div>
+					<div id="Coliseum" >
 						<header class="show_hide">
-							The Coliseum Theater<br/>
+							<span class="company">The Coliseum Theater</span><br/>
 							<span class="place">Lamoni, IA</span><br/>
 							<span class="title">Student Manager/Supervisor/Projectionist</span>
 							<span class="right">Fall 2008 - Present</span>
@@ -171,10 +321,10 @@
 							
 						</p>
 						<footer></footer>
-					</article>
-					<article id="STA" >
+					</div>
+					<div id="STA" >
 						<header class="show_hide">
-							Student Technology Assistants Plus (STA+)<br/>
+							<span class="company">STA+</span><br/>
 							<span class="place">Lamoni, IA</span><br/>
 							<span class="title">Student Representative</span>
 							<span class="right">Fall 2009 - Present</span>
@@ -187,10 +337,10 @@
 							
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Anders" >
+					</div>
+					<div id="Anders" >
 						<header class="show_hide">
-							Anders Crane Service<br/>
+							<span class="company">Anders Crane Service</span><br/>
 							<span class="place">Lamoni, IA</span><br/>
 							<span class="title">Operator/Mechanic</span>
 							<span class="right">All My Life</span>
@@ -213,18 +363,18 @@
 							
 						</p>
 						<footer></footer>
-					</article>
+					</div>
 					<footer></footer>
 				</div>
 				<footer></footer>
-			</article>
-			<article id="P" class="outside">
+			</div>
+			<div id="P" class="outside">
 				<header>Projects</header>
 			
 				<div class="inside">
-					<article id="iTunes">
+					<div id="iTunes">
 						<header class="show_hide">
-							iTunes Scripting
+							<span class="company">iTunes Scripting</span>
 							<span class="right">Fall 2010 - Present</span>
 						</header>
 						
@@ -237,10 +387,10 @@
 							Recently, I have started working on rebuilding my JScripts using AppleScript. AppleScript is one of the goofiest languages I have ever used, but I figured it out within a few short hours. I haven't added any of my AppleScripts to my website because Mac users have <a href="http://dougscripts.com/" target="_blank">Doug's Applescripts</a>. 
 						</p>
 						<footer></footer>
-					</article>
-					<article id="iPhone" >
+					</div>
+					<div id="iPhone" >
 						<header class="show_hide">
-							iPhone Apps
+							<span class="company">iPhone Apps</span>
 							<span class="right">Fall 2011 - Present</span>
 						</header>
 						
@@ -259,10 +409,10 @@
 						
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Robot" >
+					</div>
+					<div id="Robot" >
 						<header class="show_hide">
-							Robotics
+							<span class="company">Robotics</span>
 							<span class="right">Fall 2008 - Present</span>
 						</header>
 						
@@ -279,31 +429,23 @@
 							
 							<br/><br/>
 							
-							<iframe src="http://www.youtube.com/embed/X8ftqeZnook"></iframe>
-							
-							This is our robot from the 2011 MICS competition. Alex Cash is doing the videoing and the narration. This is the robot that got us Second place at the MICS competition. 
+							Our <a href="http://www.youtube.com/embed/X8ftqeZnook">2011 Robot</a>  got us Second place at the MICS competition, our first year. 
 							
 							<br/><br/>
 							
 							Our robot was, easily, the most robust design at the competition. We had the strongest algorithm and we had	the sturdiest and most thought-out chasis.
 							
-							<iframe src="http://www.youtube.com/embed/uzuumELcttI"></iframe>
-							
-							This is our robot from the 2012 MICS competition. Alex Cash is doing the videoing and the narration. 
-							
-							Alex and I built a robust robot that solved the puzzles for a second year. 
-							
-							<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI"></iframe>
+							Our <a href="http://www.youtube.com/embed/uzuumELcttI">2012 Robot</a> solved the puzzles for a second year at MICS.
 							
 							The code for our solutions are on <a href="https://github.com/briananders/Robotics-Solutions" target="_blank">Github</a>.
 							<br/><br/>
 							
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Android" >
+					</div>
+					<div id="Android" >
 						<header class="show_hide">
-							Android Apps
+							<span class="company">Android Apps</span>
 							<span class="right">Winter 2011</span>
 						</header>
 						
@@ -318,10 +460,10 @@
 						
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Fishtank" >
+					</div>
+					<div id="Fishtank" >
 						<header class="show_hide">
-							Fish Tank Computer
+							<span class="company">Fish Tank Computer</span>
 							<span class="right">Spring 2010</span>
 						</header>
 						
@@ -332,16 +474,14 @@
 							apart a computer and make it into something great. $300 in supplies later, including a 
 							fish tank and 6 gallons of mineral oil, we had built a fish tank computer. Mineral oil is non-conductive. This allowed us to tear the shell off the tower and submerge the motherboard, power supply, etc. into the mineral oil. The mineral oil acts as a liquid coolant. Any moving parts, like the hard drive, had to remain outside the oil. <br/>
 							<br/>
-							Here's a video of us during the project:<br/>
-							
-							<iframe src="http://www.youtube.com/embed/GNhxvhKoagg"></iframe>
+							Here's a <a href="http://www.youtube.com/embed/GNhxvhKoagg">video on youtube</a> of us during the project:<br/>
 
 						</p>
 						<footer></footer>
-					</article>
-					<article id="MAME" >
+					</div>
+					<div id="MAME" >
 						<header class="show_hide">
-							Multiple Arcade Machine Emulator (MAME)
+							<span class="company">M.A.M.E.</span>
 							<span class="right">Fall 2011 - Spring 2012</span>
 						</header>
 						
@@ -352,10 +492,10 @@
 						
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Programming" >
+					</div>
+					<div id="Programming" >
 						<header class="show_hide">
-							Programming Competitions
+							<span class="company">Competitions</span>
 							<span class="right">Fall 2008 - Present</span>
 						</header>
 						
@@ -370,18 +510,18 @@
 						
 						</p>
 						<footer></footer>
-					</article>
+					</div>
 					<footer></footer>
 				</div>
 				<footer></footer>
-			</article>
-			<article id="Honors" class="outside">
+			</div>
+			<div id="Honors" class="outside">
 				<header>Honors and Awards</header>
 			
 				<div class="inside">
-					<article id="ACM" >
+					<div id="ACM" >
 						<header class="show_hide">
-							ACM President and Vice President
+							<span class="company">ACM President <br/> Vice President</span>
 							<span class="right">Fall 2008 - Present</span>
 						</header>
 						
@@ -390,15 +530,15 @@
 						
 							The <a href="http://www.acm.org">Association for Computing Machinery (ACM)</a> is the world’s largest educational and scientific computing society. At Graceland University, we have an ACM chapter. I have been an ACM student member since my freshmen year. We meet weekly to discuss current events in tech, watch presenters, and do activities.<br/>
 							<br/>
-							Last year, my fourth year, I was elected as Vice President of our ACM chapter. Throughout the year I worked hand in hand with the President and Secretary to make ACM great. We setup lots of speakers to come and talk about their field, we had game nights, and generally we had a great time. One thing we did that was a little different than the usual campus club was to reserve an area of the school news paper, The Tower, for an ACM article. We called it "Tech Now" and every two weeks we would submit an article about current and/or important tech news. I wrote several articles that year and they were a smashing success, as were all the Tech Now articles.<br/>
+							Last year, my fourth year, I was elected as Vice President of our ACM chapter. Throughout the year I worked hand in hand with the President and Secretary to make ACM great. We setup lots of speakers to come and talk about their field, we had game nights, and generally we had a great time. One thing we did that was a little different than the usual campus club was to reserve an area of the school news paper, The Tower, for an ACM div. We called it "Tech Now" and every two weeks we would submit an div about current and/or important tech news. I wrote several divs that year and they were a smashing success, as were all the Tech Now divs.<br/>
 							<br/>
-							This year, I am ACM President. The year has gone really well so far. Everyone seems to be enjoying it. I managed to recruit a new bunch of freshmen to come to meetings and strengthen our department. Freshmen have been catching me on the sidewalk to tell me how fun the last meeting was. This year we have continued the "Tech Now" article in the paper. So far, I have written all the articles. It has still been a hit again.
+							This year, I am ACM President. The year has gone really well so far. Everyone seems to be enjoying it. I managed to recruit a new bunch of freshmen to come to meetings and strengthen our department. Freshmen have been catching me on the sidewalk to tell me how fun the last meeting was. This year we have continued the "Tech Now" div in the paper. So far, I have written all the divs. It has still been a hit again.
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Ackerley" >
+					</div>
+					<div id="Ackerley" >
 						<header class="show_hide">
-							Ackerley Scholarship
+							<span class="company">Ackerley Scholarship</span>
 							<span class="right">Fall 2008 - Present</span>
 						</header>
 						
@@ -413,9 +553,10 @@
 						
 						</p>
 						<footer></footer>
-					</article>
-					<article id="Eagle" >
-						<header class="show_hide">Eagle Scout
+					</div>
+					<div id="Eagle" >
+						<header class="show_hide">
+							<span class="company">Eagle Scout</span>
 							<span class="right">December 21, 2005</span>
 						</header>
 						
@@ -429,22 +570,103 @@
 						
 						</p>
 						<footer></footer>
-					</article>
+					</div>
 					
 					<footer></footer>
 				</div>
 				<footer></footer>
-			</article>
-			
-			<footer id="footer">
-				&#169; 2012 Brian Anders<br/>
-			All HTML, CSS and JavaScript/JQuery written or modified by Brian Anders
-			</footer>
-			<div id="foot">
-				Validate:
-				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
-				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
+			</div>
+		</div>
+		<div class="container" id="Education" >
+			<div class="education">
+				<header>Graceland University</header>
+				<p>
+					<img alt="Graceland Administration Building" src="img/Graceland.jpg" />	
+					Attended: Fall 2008 - Present<br/>
+					Anticipated graduation date: May 2013<br/>
+					B.S. Computer Science/Information Technology<br/>
+					B.S. Mathematics<br/>
+					Minor in Web Design<br/>
+					Current GPA: 3.690<br/>
+					<br/>
+					Honor Role 12 consecutive Semesters<br/>
+					Ackerley Scholar (2008-present)<br/>
+					Active ACM Member (2008-present)<br/>
+					Vice President of ACM chapter (2011-2012)<br/>
+					President of ACM chapter (2012-2013)
+				</p>
+				<footer></footer>
+			</div>	
+			<div class="education">
+				<header>Lamoni High School</header>
+				<p>
+					<img alt="Lamoni School Sign" src="img/LamoniSchools.jpg" />	
+					Attended: Fall 2003 - Spring 2008<br/>
+					Diploma<br/>
+					GPA: 3.860<br/>
+					<br/>
+					Honor Role 8 consecutive Semesters<br/>
+					Eagle Scout in the Boy Scouts of America
+				</p>
+				<footer></footer>
+			</div>
+		</div>
+		<div class="container" id="References" >
+			<div class="ref">
+				<img class="Prof" id="Brunner" src="img/KevinBrunner.png" alt="Kevin Brunner" style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
+				
+				<span>
+					<strong>Kevin Brunner</strong>, Ph.D.,<br/>
+					Associate Professor of Information Technology<br/>
+					Ph: 641.784.5175<br/>
+					<a href="mailto:brunner@graceland.edu">brunner@graceland.edu</a>
+				</span>
+				<footer></footer>
+			</div>
+			<div class="ref">
+				<img class="Prof" id="JJones" src="img/JimJones.png" alt="Jim Jones"  style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
+				
+				<span>
+					<strong>James Jones</strong>, Ph.D.,<br/>
+					Professor of Computer Science<br/>
+					Ph: 641.784.5294<br/>
+					<a href="mailto:jsjones@graceland.edu">jsjones@graceland.edu</a>
+				</span>
+				<footer></footer>
+			</div>
+			<div class="ref">
+				<img class="Prof" id="Kioko" src="img/TonyKioko.png" alt="Tony Kioko"  title="He is a pretty private person" style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
+				
+				<span>
+					<strong>Tony Kioko</strong>,<br/>
+					Senior IT Analyst<br/>
+					Principal Financial Group<br/>
+					Ph: 515.991.2676<br/>
+					<a href="mailto:Kioko.Antonio@principal.com">Kioko.Antonio@principal.com</a>
+				</span>
+				<footer></footer>
+			</div>
+			<div class="ref">
+				<img class="Prof" id="Cash" src="img/AlexCash.png" alt="Alex Cash"  style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
+				
+				<span>
+					<strong>Alex Cash</strong><br/>
+					Frontend Engineer<br/>
+					Nest Labs<br/>
+					<a href="mailto:"></a>
+				</span>
+				<footer></footer>
 			</div>	
 		</div>
+
+		<div id="footer">
+			&#169; 2013 Brian Anders
+		</div>
+
+		<div id="validate">
+			Validate:
+			<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
+		</div>	
 	</body>
 </html>

@@ -1,96 +1,114 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en><![endif]--> 
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=en><![endif]--> 
-<!--[if IE 8]><html class="no-js lt-ie9" lang=en><![endif]--> 
-<!--[if gt IE 8]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<html lang="en">
 	<head>
 		<meta charset="utf-8"/>   
-		<meta name=description content="Brian Anders's Resume Website"> 
-		<meta name=author content="Brian Anders"> 
-		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
 		<title> Brian Anders | References </title>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/clear.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/modernizr-1.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="clear.css">
+		<script type="text/javascript">
+
+			function getcss(cssfile){
+				loadcss = document.createElement('link')
+				loadcss.setAttribute("rel", "stylesheet")
+				loadcss.setAttribute("type", "text/css")
+				loadcss.setAttribute("href", cssfile)
+				document.getElementsByTagName("head")[0].appendChild(loadcss)
+
+				}
+
+				if(screen.width <= '999') 
+				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
+				{
+					getcss('small.css') 
+					// Defines the .css file you want to load for this range (800x600.css)
+				}
+				else 
+				{
+					getcss('style.css')
+					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
+				}
+
+		</script>
+
 	</head>
 	<body>
-		<header id="top">
-			<div id="profile" class="img"></div>
-			<h1>Brian Anders</h1>
-			<span>
-				Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-			</span>
-			<div id="icons">
-				<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
-				<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
-				<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
-				<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
-				<a id="gmail" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
-			</div>
-			<nav>
-				<a href="./">Home</a>
-				<a href="AboutMe.html">About Me</a>
-				<a href="Experience.html">Experience</a>
-				<a href="Education.html">Education</a>
-				<a href="References.html" class="selected">References</a>
-			</nav>
-		</header>
 		<div id="container">
-			<article class="ref">
-				<img class="Prof" id="Brunner" src="img/KevinBrunner.png" alt="Kevin Brunner" style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
-				
+			<header>
+				<div><h2>Brian Anders | </h2><h3>References</h3></div>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="../Resume2/" class="lborder first">Home</a>
+					</li>
+					<li>
+						<a href="AboutMe.html" class="lborder">About Me</a>
+					</li>
+					<li>
+						<a href="Experience.html" class="lborder">Experience</a>
+					</li>
+					<li>
+						<a href="Education.html" class="lborder">Education</a>
+					</li>
+					<li>
+						<a class="rborder lborder last selected">References</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div class="main ref">
+				<img class="Prof" id="Brunner" src="images/KevinBrunner.png" alt="Kevin Brunner" />
+				<div class="spacer"></div>
 				<span>
-					<strong>Kevin Brunner</strong>, Ph.D.,<br/>
+					<strong>Kevin D. Brunner</strong>, Ph.D.,<br/>
 					Associate Professor of Information Technology<br/>
 					Ph: 641.784.5175<br/>
 					<a href="mailto:brunner@graceland.edu">brunner@graceland.edu</a>
 				</span>
-			</article>
-			<article class="ref">
-				<img class="Prof" id="JJones" src="img/JimJones.png" alt="Jim Jones"  style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
-				
+			</div>
+			<div class="main ref">
+				<img class="Prof" id="JJones" src="images/JimJones.png" alt="Jim Jones" />
+				<div class="spacer"></div>
 				<span>
-					<strong>James Jones</strong>, Ph.D.,<br/>
+					<strong>James S. Jones</strong>, Ph.D.,<br/>
 					Professor of Computer Science<br/>
 					Ph: 641.784.5294<br/>
 					<a href="mailto:jsjones@graceland.edu">jsjones@graceland.edu</a>
 				</span>
-			</article>
-			<article class="ref">
-				<img class="Prof" id="Ellis" src="img/RonEllis.png" alt="Ron Ellis"  style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
-				
+			</div>
+			<div class="main ref">
+				<img class="Prof" id="Ellis" src="images/RonEllis.png" alt="Ron Ellis" />
+				<div class="spacer"></div>
 				<span>
 					<strong>Ron Ellis</strong>, Ph.D.,<br/>
 					Director of Instructional Technology<br/>
 					Ph: 641.784.5467<br/>
 					<a href="mailto:ellis@graceland.edu">ellis@graceland.edu</a>
 				</span>
-			</article>
-			<article class="ref">
-				<img class="Prof" id="Hamilton" src="img/BrittanyHamilton.png" alt="Brittany Hamilton"  style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
-				
+			</div>
+			<div class="main ref">
+				<img class="Prof" id="Cash" src="images/AlexCash.png" alt="Alex Cash" />
+				<div class="spacer"></div>
 				<span>
-					<strong>Brittany Hamilton</strong><br/>
+					<strong>Alex Cash</strong>,<br/>
+					Co-Founder, App Developer of Room 12 Studios, llc.<br/>
+					<a href="http://www.room12studios.com/" target="_blank">room12studios.com</a><br/>
+					<a href="mailto:abcash@graceland.edu">abcash@graceland.edu</a>
+				</span>
+			</div>
+			<div class="main ref" style="margin-right:0px;">
+				<img class="Prof" id="Hamilton" src="images/BrittanyHamilton.png" alt="Brittany Hamilton" />
+				<div class="spacer"></div>
+				<span>
+					<strong>Brittany Hamilton</strong>,<br/>
 					Manager of the Coliseum Theater<br/>
 					Ph: 641.784.5204<br/>
 					<a href="mailto:bhamilto@graceland.edu">bhamilto@graceland.edu</a>
 				</span>
-			</article>
-			<article class="ref">
-				<img class="Prof" id="Cash" src="img/AlexCash.png" alt="Alex Cash"  style="height:421px; width:280px; margin-right: 0px; margin-left: 0px;"/>
-				
-				<span>
-					<strong>Alex Cash</strong><br/>
-					Developer at Nest Labs<br/>
-					Lead developer at Room 12 Studios <br/>
-					<a href="mailto:abcash@graceland.edu">abcash@graceland.edu</a>
-				</span>
-			</article>
+			</div>
+					
 			<footer id="footer">
-				&#169; 2012 Brian Anders. All rights reserved. <br/>
-			All HTML, CSS and Javascript/JQuery written or modified by Brian Anders
+				 &#169; 2012 Brian Anders. All rights reserved.
 			</footer>
 			<div id="foot">
 				Validate:
@@ -100,3 +118,4 @@
 		</div>
 	</body>
 </html>
+

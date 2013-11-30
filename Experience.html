@@ -1,192 +1,415 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en><![endif]--> 
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=en><![endif]--> 
-<!--[if IE 8]><html class="no-js lt-ie9" lang=en><![endif]--> 
-<!--[if gt IE 8]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<html lang="en">
 	<head>
 		<meta charset="utf-8"/>   
-		<meta name=description content="Brian Anders's Resume Website"> 
-		<meta name=author content="Brian Anders"> 
-		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
 		<title> Brian Anders | Experience </title>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/clear.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--[If lt IE 8]><style type="text/css">.header > .right {display: none;}</style><![endif]-->
+		<link rel="stylesheet" type="text/css" href="clear.css">
+		<script type="text/javascript">
 
+			function getcss(cssfile){
+				loadcss = document.createElement('link')
+				loadcss.setAttribute("rel", "stylesheet")
+				loadcss.setAttribute("type", "text/css")
+				loadcss.setAttribute("href", cssfile)
+				document.getElementsByTagName("head")[0].appendChild(loadcss)
+			}
+
+			if(screen.width <= '999'){
+				getcss('small.css') 
+			}else {
+				getcss('style.css')
+			}
+			
+			$(".test").click(function() {
+			  alert("FUCK");
+			});
+
+		</script>
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-		<script src="js/HideShow.js"></script>
-		<script src="js/modernizr-1.0.min.js"></script>
+		<script src="HideShow.js"></script>
 		
 		<style type="text/css">
-			
+		article:hover{
+			background: rgba(160, 160, 160, 0.11);
+		}
 		</style>
 		
 	</head>
-	<body>
-		<header id="top">
-			<div id="profile" class="img"></div>
-			<h1>Brian Anders</h1>
-			<span>
-				Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-			</span>
-			<div id="icons">
-				<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
-				<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
-				<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
-				<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
-				<a id="gmail" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
-			</div>
-			<nav>
-				<a href="./">Home</a>
-				<a href="AboutMe.html">About Me</a>
-				<a href="Experience.html" class="selected">Experience</a>
-				<a href="Education.html">Education</a>
-				<a href="References.html">References</a>
-			</nav>
-		</header>
-			
+	<body id="Top">
 		<div id="container">
-			<article id="P" class="outside">
-				<header>Personal Projects</header>
+			<header>
+				<div><h2>Brian Anders | </h2><h3>Experience</h3></div>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="../Resume2/" class="lborder first">Home</a>
+					</li>
+					<li>
+						<a href="AboutMe.html" class="lborder">About Me</a>
+					</li>
+					<li>
+						<a class="lborder selected">Experience</a>
+					</li>
+					<li>
+						<a href="Education.html" class="lborder">Education</a>
+					</li>
+					<li>
+						<a href="References.html" class="rborder lborder last">References</a>
+					</li>
+				</ul>
+			</nav>
 			
+			<div id="main">
+				<article id="P" class="show_hide">
+					<a href="" class="show_hide articleheader">Personal Projects<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						
+						Since learning computer programming, I have done several personal projects outside of school work. Some, I have listed, while others, I have not.
+
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
 				<div class="inside">
 					<article id="iTunes">
-						<header class="show_hide">
-							iTunes Scripting
-							<span class="right">Fall 2010 - Present</span>
-						</header>
+						<a  class="show_hide articleheader">iTunes JScripts<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="iTunes icon" src="img/iTunes.png" />
-							Just because something is considered done, doesn't mean it is. iTunes is this way. I have written JScript and AppleScripts to do functionality that is not available in iTunes's main interface.
+							<img alt="iTunes icon" src="images/iTunes.png" />
+							As goes with my obsession of music, I have a lot of music on my computer. I bought my first iPod when I was in 7th grade. So, it stands to reason that I have had to work with iTunes all this time as well. I like iTunes a lot, but being a computer person and working with logic, I am very organized and sometimes become obsessed trying to organize my music.
 							<br/><br/>
-							I also made a <a href="../iTunes_Javascript.php" target="_blank">website</a> for many of my scripts. They are not locked down, so feel free to take them and play with them on your own.
+							Just because something is considered done, doesn't mean it is. So I researched how to write scripts to do things automatically, like fix capitalization or build and sort playlists. I use JScripts, which are very similar to javascripts. JScripts were developed by Microsoft for Internet Explorer. According to Douglas Crockford, "They are just different names for the same language," but JScript supports <a href="http://en.wikipedia.org/wiki/Conditional_comment#Conditional_comments_in_JScript" target="_blank">Conditional Comments</a>.
 							<br/><br/>
-							Recently, I have started working on rebuilding my JScripts using AppleScript.
+							I also made a <a href="../iTunes_Javascript.php" target="_blank">website</a> for many of my scripts using php to automatically list all the files and their desciptions.
+							<br/><br/>
+							Here's an example of some script code:
+							<br/>
+							<span>
+								<br/>/*
+								<br/>This Program adds to the play count of the selected tracks.
+								<br/>
+								<br/>By: Brian Anders
+								<br/>*/
+								<br/>
+								<br/>var Amount = 1;
+								<br/>
+								<br/>var iTunesApp = WScript.CreateObject("iTunes.Application");
+								<br/>var Tracks = iTunesApp.SelectedTracks;
+								<br/>var numtracks = Tracks.Count;
+								<br/>
+								<br/>
+								<br/>while(numtracks > 0)
+								<br/>{
+								<br/>	var currTrack = Tracks.Item(numtracks);
+								<br/>	var Artist = currTrack.Artist;
+								<br/>	var Name = currTrack.Name;
+								<br/>	var Album = currTrack.Album;
+								<br/>	var Track = currTrack.TrackNumber;
+								<br/>	var count = currTrack.PlayedCount;
+								<br/>
+								<br/>	currTrack.PlayedCount += Amount;
+								<br/>
+								<br/>	numtracks--;
+								<br/> 
+								<br/>}
+								<br/>
+								<br/>WScript.Echo("Done!");
+							</span>
 						</p>
 						<footer></footer>
 					</article>
-					<article id="iPhone" >
-						<header class="show_hide">
-							iPhone Apps
-							<span class="right">Fall 2011 - Present</span>
-						</header>
+					<article id="iPhone">
+						<a  class="show_hide articleheader">iPhone Apps<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="iPhone 4" src="img/iPhone4.png" />
+							<img alt="iPhone 4" src="images/iPhone4.png" />
 							
-							I am an avid apple fan. They control the user experience from end to end. They make the device, the OS, and the software you use with the product. To extend this control, they created the Apple store, and they even developed XCode, the suite for developing apps for iDevices.
-							<br/><br/>
-							I have been working on iPhone apps primarily. Objective-C is a powerful language with some great features.
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<article id="Fishtank" >
-						<header class="show_hide">
-							Fish Tank Computer
-							<span class="right">Spring 2010</span>
-						</header>
+					<article id="Fishtank">
+						<a  class="show_hide articleheader">Fish Tank Computer<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Fish Tank Computer" src="img/Fishtank1.jpg" />
+							<img alt="Fish Tank Computer" src="images/Fishtank2.jpg" />
+							<img alt="Fish Tank Computer" src="images/Fishtank1.jpg" />
 						
-							For a class project, my Sophomore year (2009), we were given the assignment to take
-							apart a computer and make it something great. $300 in supplies later, including a 
-							fish tank and 6 gallons of mineral oil, we had built a fishtank computer.
+							For a class project, my Sophomore year (2009), in our computer hardware class, we were given the assignment to take
+							apart a computer and make it look totally different, yet still work. My team looked into different ways to 
+							have a computer cool itself differently. Why use a loud fan? One of us ran across a fish tank computer and
+							showed the rest of the group. We were immediately saying "We can do this." So we researched how to do it,
+							the pros and cons of the idea, and the price to do it. Overall we spent around $300 in supplies, including a 
+							fish tank and 6 gallons of Mineral Oil. 
+							<br/><br/>
+							An interesting property of Mineral Oil, is that it is a nonconductive,
+							clear, liquid. This means that we can submerge our electrical gadgets, like a computer's motherboard and power
+							supply, into mineral oil and it will not short out or electricute anyone. It also acts as a decent coolant.
+							<br/><br/>
+							We set our motherboard and power supply into the fish tank and filled it with mineral oil (video below). The fans stopped spinning in the video card and power supply. We ran a program called Prime95, which tries to find all the prime numbers. The real purpose of Prime95 is to peg your processor at 100% for as long as it runs. We then put a thermometer into the oil to track the temperature change. We also got software to show the temperature on the screen. After a few hours the fans started spinning again, probably because the oil is great lubricant.
 							
 							<iframe src="http://www.youtube.com/embed/GNhxvhKoagg"></iframe>
 
+							Things we learned: mineral oil would be a much better coolant if we hooked it up to a liquid cooler, like a radiator in a car, 
+							otherwise, over long periods of time, it will heat up. Naturally, the more you use your computer, and the more 
+							processing you do, the warmer the oil gets.
+							<br/><br/>
+							Some bad things about mineral oil that we learned. Oil wicks up. This means, that unlike water, oil will oppose 
+							the force of gravity. If you dipped the tip of a hanging rope into a puddle of mineral oil, it will slowly absorb into
+							the rope and make its way up to the top. This also means that if you leave your mouse, keyboard, and monitor hooked up to the 
+							fish tank computer, you will find oil coming out of your mouse, keyboard, and monitor a few weeks later. When we did it, there 
+							was no damage, so it was pretty funny. We also found that the oil traveled inside the cords and would come out of the wall socket.
+							<br/><br/>
+							Do we still have this sweet machine? No. Our professor thought that it was a really cool bit of work and liked to show it off.
+							And being a busy and forgetful person, he left it on for about a week. The outcome was a fish tank that cracked and oozed hot mineral
+							oil all over our floor, which had to be replaced. So, moral of the project: it's a cool project, but not a realistic way to cool
+							your system for a long period of time.
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<article id="MAME" >
-						<header class="show_hide">
-							Multiple Arcade Machine Emulator (MAME)
-							<span class="right">Fall 2011 - Spring 2012</span>
-						</header>
+					<article id="MAME">
+						<a  class="show_hide articleheader">Multiple Arcade Machine Emulator (MAME)<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Arcade Grey" src="img/ArcadeGrey.png" />
+							<img alt="Arcade Grey" src="images/ArcadeGrey.png" />
+							
 						
-							A friend of mine and I had the idea of building an arcade cabinet. The friend is <a href="http://www.alexcash.com">Alex Cash</a>, and during my senior year, we built an arcade cabinet from scratch. We got money to buy all the necessary pieces for construction, like plywood and screws. In my garage, we built the shell for the arcade. We then got a computer and set it up for MAME (Multiple Arcade Machine Emulator). MAME allows one to enjoy all their favorite games from their youth on a modern computer system. Do you like Mario Kart or 007 Golden Eye for the Nintendo 64? With MAME setup correctly and with the correct ROMS, you can play those games again.
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<footer></footer>
 				</div>
-				<footer></footer>
-			</article>
-			<article id="Graceland" class="outside">
-				<header>Graceland University</header>
-			
+				<article id="Graceland">
+					<a  class="show_hide articleheader">Graceland University<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="CSLab" src="images/PracticeProgrammingCompetition.JPG" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
 				<div class="inside">
-					<article id="ACM" >
-						<header class="show_hide">
-							Association for Computing Machinery (ACM)
-							<span class="right">Fall 2008 - Present</span>
-						</header>
+					<article id="ACM">
+						<a  class="show_hide articleheader">Association for Computing Machinery (ACM)<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Crane" src="img/Crane.jpg" />
+							<img alt="Crane" src="images/Crane.jpg" />
+							
 						
-							The <a href="http://www.acm.org">Association for Computing Machinery (ACM)</a> is the world’s largest educational and scientific computing society. At Graceland University, we have an ACM chapter. I have been an ACM student member since my freshmen year. My fourth year in the organization, I was elected to Vice President of ACM. <br/>
-							<br/>
-							This year, I am ACM President.<br/>
-							<br/>
-							We meet weekly to discuss current events in tech, watch presenters, and do activities. 		
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<article id="Ackerley" >
-						<header class="show_hide">
-							Ackerley Scholarship
-							<span class="right">Fall 2008 - Present</span>
-						</header>
+					<article id="Ackerley">
+						<a  class="show_hide articleheader">Ackerley Scholarship<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Crane" src="img/Crane.jpg" />
+							<img alt="Crane" src="images/Crane.jpg" />
+							
 						
-							At Graceland University, there is a scholarship paid for by the Ackerley Brothers. The <a target="blank" href="http://www.graceland.edu/About-GU/Offices/Ackerley-Scholars/index">Ackerley Scholarship</a> is presented to students based on scholastic achievement and leadership potential. I received my Ackerley Scholarship at the beginning of my freshmen year and it has continued throughout the duration of time at Graceland.
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<article id="Programming" >
-						<header class="show_hide">
-							Programming Competitions
-							<span class="right">Fall 2008 - Present</span>
-						</header>
+					<article id="Programming">
+						<a  class="show_hide articleheader">Programming Competitions<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Programming Contest" src="img/ProgrammingCompetition.JPG" />
+							<img alt="Programming Contest" src="images/ProgrammingContest.JPG" />
+							<img alt="Programming Contest" src="images/ProgrammingCompetition.JPG" />
+							
 						
-							At Graceland, one of the cool computer things we do outside of class, is go to programming competitions. We go to one each semester. We usually have to program in Java or C++, but sometimes we get to program in many other languages, like Python. <br/>
-							<br/>
-							My team is consistenly one of the strongest at these competitions. In 2012, we scored in the top 15%.	
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<article id="Robot" >
-						<header class="show_hide">
-							Robotics
-							<span class="right">Fall 2008 - Present</span>
-						</header>
+					<article id="Robot">
+						<a  class="show_hide articleheader">Robotics<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Testing our robot" src="img/RobotWork.jpg" />
+							<img alt="Testing our robot" src="images/RobotWork.jpg" />
+							<img alt="Testing our robot" src="images/RobotWork2.jpg" />
+							<img alt="Testing our robot" src="images/SecondPlace.jpg" />
 
-							The Midwest Instruction and Computing Symposium is a regional conference where I am from. It is kind of a big deal to many Universities in the area. It's a conference for most of the time, but there is also a programming contest and a robotics
+							
+							The Midwest Instruction and Computing Symposium is a regional conference where I am from. It is kind of a big deal to many
+							Universities in the area. It's a conference for most of the time, but there is also a programming contest and a robotics
 							contest. My Junior year, <a href="http://www.alexcash.com" target="_blank">Alex Cash</a>, a good friend of mine, and I decided to team up
 							and build a robot for the contest. We received Second place at the 2011 contest, our first year.
 							<br/><br/>
-							<a href="docs/RoboMazeMICS_2011.pdf">2011 MICS Rules</a><br/>
+							<a href="RoboMazeMICS_2011.pdf">2011 MICS Rules</a><br/>
 							<br/>
-							<a href="docs/Robot_grid_world_2012.pdf">2012 MICS Rules</a>
+							<a href="Robot_grid_world_2012.pdf">2012 MICS Rules</a>
 							
 							<br/><br/>
 							
@@ -198,159 +421,330 @@
 							<br/><br/>
 							
 							Our robot was, easily, the most robust design at the competition. We had the strongest algorithm and we had
-							the sturdiest and most thoughtout chasis.
+							the sturdiest and most thoughtout chasis. It just wasn't the fastest. But that was fine. We sacrificed the speed for
+							a more accurate turn and straighter driving. We went expecting to solve the mazes, not win any prizes. 
+							That was not our goal. We wanted to make a failproof robot. We succeeded that year.
 							
 							<iframe src="http://www.youtube.com/embed/uzuumELcttI"></iframe>
 							
-							This is our robot from the 2012 MICS competition. Alex Cash is doing the videoing and the narration. 
+							This is our robot from the 2012 MICS competition. Alex Cash is doing the videoing and the narration. This robot didn't place
+							at MICS. We added a smarter drive home method that would actually fail on one general case. Sadly, both contest mazes were
+							easy enough that they fit those cases. So we basically crashed and burned. But we learned from it. We had spent so much time
+							making these horrible mazes, that we didn't a simple one.
+							
+							<br/><br/>
+							
+							The way we decide which way to go home is simple. Wwe keep a stack of all the coordinates that we have been to. 
+							So when it's time to go home, we just pop off the stack until we get to (0,0). I noticed that if we looped somewhere
+							(drove through a square, continued on, drove through the same square again, and continued again), we would be wasting valuable
+							time driving a loop on the way home. So I added a function to our stack called Cleanup(). When you call through Cleanup(), it
+							iterates through the Stack(which was really an array) and looked for a coordinate to be stored twice. If it found that coordinate,
+							it would remove all the coordinates between the duplicates, and the duplicate. If it found duplicates, it would start the search over
+							and look again to make sure that it found all the loops. It worked like a dream. The issue is, that when you work with stacks in Java,
+							you have to get clever with how you build them. Our solution was to fill an array with zeros and then change their values as we get to 
+							those indeces, while keeping a second variable that was the index of the top of the stack. So when we called Cleanup(), it would cleanup. 
+							It would look for the last set of nonzero coordinates and put index of the top of the stack there. But if there are no loops, it leaves
+							the index on the last set of (0,0) coordinates. This is a problem.
+							
+							<br/><br/>
+							
+							At the competition, we didn't realize our mistake until we failed the first maze. After starting the competition, you can't change your code.
+							So we were doomed to lose the other maze too. I did go grab our computer and fix the error, so that after we lost the competition, we reloaded
+							the code and, in front of the remaining audience, solved the puzzles, proving that we did have a solution. So even though we didn't get first
+							place, the audience knew that we deserved it. 
+							
+							<br/><br/>
 							
 							Alex and I built a robust robot that solved the puzzles for a second year.
 							
 							<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI"></iframe>
 							
+							This last video is of a particularly difficult puzzle. It's a bit of a tight squeeze. We redesigned our robot's chasis 
+							several times to bring its size down for tight mazes like this one. This video was taken pre-loop remover.
+							<br/><br/>
 							The code for our solutions are on <a href="https://github.com/littleanders2/Robotics-Solutions" target="_blank">Github</a>.
 							<br/><br/>
 							
+							Video of our failure at the MICS competition below.
+							<!--iframe src="http://www.youtube.com/embed/3ZoqgPOKeTA"></iframe-->
+							<video src="videos/MicsFail.mp4" controls preload=auto poster="images/RobotWork.jpg"></video>
+							Needless to say, we learned our lesson.
+							
 						</p>
 						<footer></footer>
 					</article>
-					<article id="Android" >
-						<header class="show_hide">
-							Android Apps
-							<span class="right">Winter 2011</span>
-						</header>
+					<article id="Android">
+						<a  class="show_hide articleheader">Android Apps<img src="images/Show.png" alt="Show/Hide"></a>
 						
 						<p class="hidden">
-							<img alt="Droid Incredible" src="img/Droid.png" />
+							<img alt="Droid Incredible" src="images/Droid.jpg" />
+							
 						
-							Android Programming in Eclipse is a terrible terrible experience.
 						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+							<br/><br/>
 						</p>
 						<footer></footer>
 					</article>
-					<footer></footer>
 				</div>
-				<footer></footer>
-			</article>
-			<article id="Other" class="outside">
-				<header>Work Experience</header>
-				
-				<div class="inside">
-					<article id="Principal" >
-						<header class="show_hide">
-							Principal Financial Group<br/>
-							<span class="place">Des Moines, IA</span><br/>
-							<span class="title">Corporate Services IT Java Devlopment Intern</span>
-							<span class="right">Summer 2012</span>
-						</header>
+				<article id="Smith">
+					<a  class="show_hide articleheader pad">Smith and Associates<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Smith Logo" src="images/SmithLogo.jpg" />
+						<img alt="Smith" src="images/Smith.jpg" />
 						
-						<p class="hidden">
-							<img alt="Principal Logo" src="img/Principal.jpg" />
-							
-							I interned at <a target="blank" href="http://www.principal.com/">Principal Financial Group</a>.
-							
-							
-						</p>
-						<footer></footer>
-					</article>
-					<article id="Smith" >
-						<header class="show_hide">
-							Smith and Associates<br/>
-							<span class="place">Houston, TX</span><br/>
-							<span class="title">Software Devlopment Intern</span>
-							<span class="right">Summer 2011</span>
-						</header>
 						
-						<p class="hidden">
-							<img alt="Smith Logo" src="img/SmithLogo.png" />
-							
-							I interned at <a target="blank" href="http://www.smithweb.com">Smith and Associates</a>.
-							
-							
-						</p>
-						<footer></footer>
-					</article>
-					<article id="Coliseum" >
-						<header class="show_hide">
-							The Coliseum Theater<br/>
-							<span class="place">Lamoni, IA</span><br/>
-							<span class="title">Assistant Manager/Supervisor/Projectionist</span>
-							<span class="right">Fall 2008 - Present</span>
-						</header>
 						
-						<p class="hidden">
-							<img alt="Film Projector" src="img/FilmProjector.png" />
-							
-							I work at the Coliseum Theater. It's awesome. I have laerned a lot. Especially the mechanics of how a projector works. 					
-							
-						</p>
-						<footer></footer>
-					</article>
-					<article id="STA" >
-						<header class="show_hide">
-							Student Technology Assistance Plus (STA+)<br/>
-							<span class="place">Lamoni, IA</span><br/>
-							<span class="title">Student Representative</span>
-							<span class="right">Fall 2009 - Present</span>
-						</header>
 						
-						<p class="hidden">
-							<img alt="Crane" src="img/Crane.jpg" />		
-							
-							I work as a Student Technology Assistant (STA+) representative. 
-							
-						</p>
-						<footer></footer>
-					</article>
-					<article id="Anders" >
-						<header class="show_hide">
-							Anders Crane Service<br/>
-							<span class="place">Lamoni, IA</span><br/>
-							<span class="title">Operator/Mechanic</span>
-							<span class="right">All My Life</span>
-						</header>
 						
-						<p class="hidden">
-							<img alt="Grove TM250" src="img/TM250.png" />
-							
-							
-							My dad grew up in Cedar Rapids across the street from Coonrod Wrecker and Crane Service. After he left to teach economics, he started his own crane company as a hobby. As long as I can remember, I have been running the cranes. It has allowed me to learn all about the mechanics of things. This is one reason that I am such a thurough programmer.
-							
-							
-						</p>
-						<footer></footer>
-					</article>
-					<article id="BSA" >
-						<header class="show_hide">
-							Boy Scouts of America<br/>
-							<span class="place">Troop 116</span><br/>
-							<span class="title">Eagle Scout</span>
-							<span class="right">Fall 2002 - Spring 2008</span>
-						</header>
 						
-						<p class="hidden">
-							<img alt="Crane" src="img/Crane.jpg" />
-							
-							
-							I am an Eagle Scout. I earned my Eagle rank when I was 15. December 22, 2005 I passed my board of review. I am one of the youngest, if not the youngest, Eagle Scout that my Troop has produced. Only 2% of all Boy Scouts earn the rank of Eagle Scout.
-							
-							
-						</p>
-						<footer></footer>
-					</article>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
 					<footer></footer>
-				</div>
-				<footer></footer>
-			</article>
+				</article>
+				<article id="Coliseum">
+					<a  class="show_hide articleheader pad">The Coliseum Theater<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Platters" src="images/Platters.png" />
+						<img alt="Film Projector" src="images/FilmProjector.png" />
+						<!--img alt="Coliseum" src="images/Coliseum.jpg" /-->
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="STA">
+					<a  class="show_hide articleheader pad">Student Technology Assistance Plus (STA+)<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Crane" src="images/Crane.jpg" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="Anders">
+					<a  class="show_hide articleheader pad">Anders Crane Service<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Grove TM250" src="images/TM250.png" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+				<article id="BSA">
+					<a  class="show_hide articleheader pad">Boy Scouts of America<img src="images/Show.png" alt="Show/Hide"></a>
+					
+					<p class="hidden">
+						<img alt="Crane" src="images/Crane.jpg" />
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet nulla non quam ultrices ultrices. Quisque mattis dolor ut nisi placerat ac vehicula nunc scelerisque. Donec pharetra molestie placerat. Vivamus a magna fringilla nulla condimentum commodo. Pellentesque suscipit convallis augue, eu accumsan nunc ornare sit amet. Aenean molestie cursus diam iaculis tempor. In lacinia luctus enim, sit amet tempus urna lobortis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla in ipsum vel lacus feugiat congue at nec justo. Curabitur a tellus velit. Nam at dolor tellus, at accumsan elit.
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<br/><br/>
+					</p>
+					<footer></footer>
+				</article>
+							
+			</div>
 			<footer id="footer">
-				&#169; 2012 Brian Anders. All rights reserved. <br/>
-			All HTML, CSS and Javascript/JQuery written or modified by Brian Anders
+				 &#169; 2012 Brian Anders. All rights reserved.
 			</footer>
 			<div id="foot">
 				Validate:
 				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
 				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
-			</div>	
+			</div>
+			<div id="spacer">
+			</div>
+		</div>
+		<div id="navigate" style="display: none;">
+			<ul id="menu">
+				<li><a id=ToTop href="#Top">Top</a></li>
+				<li><a href="#P">Personal</a>
+					<ul class="inthea">
+						<li><a href="#iTunes">iTunes</a></li>
+						<li><a href="#iPhone">iPhone</a></li>
+						<li><a href="#Fishtank">Fish Tank</a></li>
+						<li><a href="#MAME">MAME</a></li>
+					</ul>
+				</li>
+				<li><a href="#Graceland">Graceland</a>
+					<ul class="inthea">
+						<li><a href="#ACM">ACM</a></li>
+						<li><a href="#Ackerley">Ackerley</a></li>
+						<li><a href="#Programming">Competition</a></li>
+						<li><a href="#Robot">Robotics</a></li>
+						<li><a href="#Android">Android</a></li>
+					</ul>
+				</li>
+				<li><a href="#Smith">Internships</a></li>
+				<li><a href="#Coliseum">Theater</a></li>
+				<li><a href="#STA">STA+</a></li>
+				<li><a href="#Anders">Cranes</a></li>
+				<li><a href="#BSA">Scouts</a></li>
+				
+			</ul>
 		</div>
 	</body>
 </html>
+

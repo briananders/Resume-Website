@@ -1,85 +1,108 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=en><![endif]--> 
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=en><![endif]--> 
-<!--[if IE 8]><html class="no-js lt-ie9" lang=en><![endif]--> 
-<!--[if gt IE 8]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<html lang="en">
 	<head>
-		<meta charset="utf-8"/>
-		<meta name=description content="Brian Anders's Resume Website"> 
-		<meta name=author content="Brian Anders"> 
-		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+		<meta charset="utf-8"/>   
 		<title> Brian Anders | Education </title>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quicksand|Josefin+Sans|Exo:400,200italic|Open+Sans:400,300|Jura:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/clear.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/modernizr-1.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="clear.css">
+		<script type="text/javascript">
+
+			function getcss(cssfile){
+				loadcss = document.createElement('link')
+				loadcss.setAttribute("rel", "stylesheet")
+				loadcss.setAttribute("type", "text/css")
+				loadcss.setAttribute("href", cssfile)
+				document.getElementsByTagName("head")[0].appendChild(loadcss)
+
+				}
+
+				if(screen.width <= '999') 
+				// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
+				{
+					getcss('small.css') 
+					// Defines the .css file you want to load for this range (800x600.css)
+				}
+				else 
+				{
+					getcss('style.css')
+					//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
+				}
+
+		</script>
+
 	</head>
 	<body>
-		<header id="top">
-			<div id="profile" class="img"></div>
-			<h1>Brian Anders</h1>
-			<span>
-				Computer Scientist, Information Technologist,<br/>Mathematician, and Web Designer	
-			</span>
-			<div id="icons">
-				<a target="_blank" id="facebook" href="http://www.facebook.com/anders.brian"><img alt="facebook" src="icons/facebook1.png"></a>
-				<a target="_blank" id="google" href="https://plus.google.com/u/0/103609977209431639131"><img alt="google plus" src="icons/googleplus1.png"></a>
-				<a target="_blank" id="twitter" href="https://twitter.com/#!/imBrianAnders"><img alt="twitter" src="icons/tweeter1.png"></a>
-				<a target="_blank" id="linkedin" href="http://www.linkedin.com/pub/brian-anders/16/7b8/35a"><img alt="linkedin" src="icons/linkedin1.png"></a>
-				<a id="gmail" href="mailto:brian.steven.anders@gmail.com"><img alt="email" src="icons/mail1.png"></a>
-			</div>
-			<nav>
-				<a href="./">Home</a>
-				<a href="AboutMe.html">About Me</a>
-				<a href="Experience.html">Experience</a>
-				<a href="Education.html" class="selected">Education</a>
-				<a href="References.html">References</a>
-			</nav>
-		</header>
-			
 		<div id="container">
-			<article class="education">
-				<header>Graceland University</header>
-				<img alt="Graceland Administration Building" src="img/Graceland.jpg" />	
-				
+			<header>
+				<div><h2>Brian Anders | </h2><h3>Education</h3></div>
+			</header>
+			<nav>
 				<ul>
-					<li>Attended: Fall 2008 - Present</li>
-					<li>Anticipated graduation date: May 2013</li>
-					<li>B.S. Computer Science/Information Technology</li>
-					<li>B.S. Mathematics</li>
-					<li>Minor in Web Design</li>
-					<li>Current GPA: 3.720</li>
-					<li>&nbsp;</li>
-					<li>Honor Role 12 consecutive Semesters</li>
-					<li>Ackerley Scholar (2008-present)</li>
-					<li>Active ACM Member (2008-present)</li>
-					<li>Vice President of ACM chapter (2011-2012)</li>
-					<li>President of ACM chapter (2012-2013)</li>
+					<li>
+						<a href="../Resume2/" class="lborder first">Home</a>
+					</li>
+					<li>
+						<a href="AboutMe.html" class="lborder">About Me</a>
+					</li>
+					<li>
+						<a href="Experience.html" class="lborder">Experience</a>
+					</li>
+					<li>
+						<a class="lborder selected">Education</a>
+					</li>
+					<li>
+						<a href="References.html" class="rborder lborder last">References</a>
+					</li>
 				</ul>
-			</article>	
-			<article class="education">
-				<header>Lamoni High School</header>
-				<img alt="Lamoni School Sign" src="img/LamoniSchools.jpg" />
-				
-				<ul>	
-					<li>Attended: Fall 2003 - Spring 2008</li>
-					<li>Diploma</li>
-					<li>GPA: 3.860</li>
-					<li>&nbsp;</li>
-					<li>Honor Role 8 consecutive Semesters</li>
-					<li>Eagle Scout in the Boy Scouts of America</li>
-				</ul>
-			</article>
+			</nav>
+			<div class="main">
+			
+				<article class="education">
+					<header>Graceland University</header>
+					
+					<p>
+						<img alt="Graceland Administration Building" src="images/Graceland.jpg" />	
+					</p>
+					<ul>
+						<li>Attended: Fall 2008 - Present</li>
+						<li>Anticipated graduation date: May 2013</li>
+						<li>B.S. Computer Science/Information Technology</li>
+						<li>B.S. Mathematics</li>
+						<li>Minor in Web Design</li>
+						<li>Current GPA: 3.690</li>
+						<li>&nbsp;</li>
+						<li>Honor Role 12 consecutive Semesters</li>
+						<li>Ackerley Scholar (2008-present)</li>
+						<li>Active ACM Member (2008-present)</li>
+						<li>Vice President of ACM chapter (2011-2012)</li>
+					</ul>
+				</article>	
+			</div>
+			<div class="main">
+				<article class="education">
+					<header>Lamoni High School</header>
+					<p>
+						<img alt="Lamoni School Sign" src="images/LamoniSchools.jpg" />
+					</p>
+					<ul>	
+						<li>Attended: Fall 2003 - Spring 2008</li>
+						<li>Diploma</li>
+						<li>GPA: 3.860</li>
+						<li>&nbsp;</li>
+						<li>Honor Role 8 consecutive Semesters</li>
+						<li>Eagle Scout in the Boy Scouts of America</li>
+					</ul>
+				</article>
+			</div>
 			<footer id="footer">
-				&#169; 2012 Brian Anders. All rights reserved. <br/>
-			All HTML, CSS and Javascript/JQuery written or modified by Brian Anders
+				 &#169; 2012 Brian Anders. All rights reserved.
 			</footer>
 			<div id="foot">
 				Validate:
 				<a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5</a>
 				<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3" target="_blank">CSS3</a>
 			</div>	
-		</div>	
+		</div>
 	</body>
 </html>
+
